@@ -1,0 +1,395 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  margin: 0;
+}
+
+body svg {
+  fill: #ef6c00;
+  vertical-align: middle;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body .row {
+  margin: 0 -15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .main-container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+  width: 100%;
+}
+
+body .main-header {
+  color: #02090f;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  display: inline-block;
+  position: relative;
+}
+
+body .main-header::after {
+  content: '';
+  width: 60px;
+  height: 2px;
+  background-color: #ef6c00;
+  display: inline-block;
+  margin-bottom: 12px;
+  margin-top: 16px;
+  vertical-align: bottom;
+  margin-left: 18px;
+}
+
+body .main-column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0 15px;
+}
+
+body .wraper .header .header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px auto;
+  padding: 0 15px;
+  max-width: 1170px;
+}
+
+body .wraper .header .header-top .info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .wraper .header .header-top .info-container .info-service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 20px;
+  color: #9b9b9b;
+}
+
+body .wraper .header .header-top .info-container .info-service .header-icon {
+  margin-right: 10px;
+}
+
+body .wraper .header .header-top .info-container .info-service .info-text {
+  font-size: 12px;
+}
+
+body .wraper .header .header-top .info-container .info-service .call-number {
+  color: black;
+  font-size: 20px;
+  font-weight: 900;
+  position: relative;
+}
+
+body .wraper .header .header-top .info-container .info-service .call-number .call {
+  color: #ef6c00;
+  position: absolute;
+  right: 0;
+}
+
+body .wraper .header .wraper-header-bottom {
+  background-color: #212529;
+}
+
+body .wraper .header .wraper-header-bottom .header-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  color: white;
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+body .wraper .header .wraper-header-bottom .header-bottom .name-site {
+  font-size: 30px;
+  font-weight: 800;
+  color: #ef6c00;
+  letter-spacing: 4px;
+}
+
+body .wraper .header .wraper-header-bottom .header-bottom .header-nav {
+  font-size: 16px;
+  font-weight: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .wraper .header .wraper-header-bottom .header-bottom .header-nav .nav-site {
+  -webkit-transition: background-color .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
+}
+
+body .wraper .header .wraper-header-bottom .header-bottom .header-nav .nav-site:hover {
+  background-color: #ef6c00;
+}
+
+body .wraper .header .wraper-header-bottom .header-bottom .header-nav .nav-site a {
+  padding: 13px 40px;
+  color: white;
+  display: block;
+}
+
+body .wraper .wraper-icon-description {
+  background-color: #212529;
+}
+
+body .wraper .wraper-icon-description .icon-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1170px;
+  margin: auto;
+}
+
+body .wraper .wraper-icon-description .icon-description .description-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 12px 15px;
+}
+
+body .wraper .wraper-icon-description .icon-description .description-block .icon-block {
+  margin-right: 25px;
+}
+
+body .wraper .main-service {
+  padding-top: 50px;
+}
+
+body .wraper .main-service .service-main-container {
+  padding: 44px 0 20px;
+}
+
+body .wraper .main-service .service-main-container .column-service:hover .service-main-image {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body .wraper .main-service .service-main-container .column-service .service-main-link {
+  display: block;
+  max-width: 263px;
+  height: 375px;
+  position: relative;
+  margin: 0 auto 30px;
+}
+
+body .wraper .main-service .service-main-container .column-service .service-main-link .wrap-service-main-image {
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+
+body .wraper .main-service .service-main-container .column-service .service-main-link .wrap-service-main-image .service-main-image {
+  position: relative;
+  display: block;
+  padding-top: 142%;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+body .wraper .main-service .service-main-container .column-service .service-main-link .wrap-service-main-image .service-main-image .main-image {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  top: 0;
+}
+
+body .wraper .main-service .service-main-container .column-service .service-main-link .main-service-shadow {
+  min-height: 250px;
+  padding-top: 140px;
+  bottom: 0px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(56%, rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0.95)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 56%, rgba(0, 0, 0, 0.95) 100%);
+}
+
+body .wraper .main-service .service-main-container .column-service .service-main-link .main-service-shadow .service-main-name {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+body .wraper .main-service .service-main-container .column-service .service-main-link .main-service-shadow .service-main-btn {
+  margin: 28px auto;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 11px 28px;
+  border: 2px solid #ef6c00;
+  display: block;
+  border-radius: 0px;
+  max-width: 140px;
+  -webkit-transition: background-color .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
+}
+
+body .wraper .main-service .service-main-container .column-service .service-main-link .main-service-shadow .service-main-btn:hover {
+  background-color: #ef6c00;
+}
+
+body .wraper .main-about {
+  padding: 100px 0 70px;
+  position: relative;
+}
+
+body .wraper .main-about .main-about-background {
+  background-image: url(/Img/about_background.png);
+  background-position: center center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -10;
+}
+
+body .wraper .main-about .main-container .main-header {
+  color: #fff;
+}
+
+body .wraper .main-about .main-container .about-main-container {
+  padding-top: 44px;
+  margin: 0 -15px;
+}
+
+body .wraper .main-about .main-container .about-main-container .main-column .about-main-link {
+  background-image: url(/Img/01.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 220px;
+  width: 100%;
+  margin: 0 auto 30px;
+  display: block;
+}
+
+body .wraper .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer {
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.85)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%);
+  position: relative;
+}
+
+body .wraper .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer:hover .about-main-orange-container {
+  height: 140px;
+}
+
+body .wraper .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer .about-main-number {
+  font-size: 52px;
+  line-height: 38px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.65);
+  -webkit-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out;
+  padding: 25px 0 7px 20px;
+  display: block;
+}
+
+body .wraper .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer .about-main-orange-container {
+  background-color: #ef6c00;
+  padding: 16px 20px;
+  overflow: hidden;
+  height: 50px;
+  -webkit-transition: height .2s ease-in-out;
+  transition: height .2s ease-in-out;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+body .wraper .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer .about-main-orange-container .about-main-name {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+body .wraper .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer .about-main-orange-container .about-main-text {
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  display: block;
+  margin-top: 7px;
+}
+
+body .wraper .main-about .main-container .about-main-container .main-column-02 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+}
+
+body .wraper .main-about .main-container .about-main-container .main-column-04 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333333%;
+          flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+body .wraper .main-about .main-container .about-main-container .main-column-06 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 41.666667%;
+          flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+}
+/*# sourceMappingURL=header.css.map */

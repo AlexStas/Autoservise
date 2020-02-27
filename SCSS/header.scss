@@ -1,0 +1,308 @@
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', ;
+            margin: 0;
+            svg {
+                fill: #ef6c00;
+                vertical-align: middle;
+            }
+            a {
+                text-decoration: none;
+            }
+            .row {
+                margin: 0 -15px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .main-container {
+                max-width: 1170px;
+                margin: auto;
+                padding: 0 15px;
+                width: 100%;
+            }
+            .main-header {
+                color: #02090f;
+                font-size: 28px;
+                line-height: 32px;
+                font-weight: bold;
+                margin-bottom: 16px;
+                display: inline-block;
+                position: relative;
+                &::after {
+                    content: '';
+                    width: 60px;
+                    height: 2px;
+                    background-color: #ef6c00;
+                    display: inline-block;
+                    margin-bottom: 12px;
+                    margin-top: 16px;
+                    vertical-align: bottom;
+                    margin-left: 18px;
+                }
+            }
+            .main-column {
+                flex: 0 0 25%;
+                max-width: 25%;
+                padding: 0 15px;
+            }
+            .wraper {
+                .header {
+                    .header-top {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 20px auto;
+                        padding: 0 15px;
+                        max-width: 1170px;
+                        .info-container {
+                            display: flex;
+                            justify-content: space-between;
+                            .info-service {
+                                display: flex;
+                                justify-content: space-between;
+                                margin: 0 20px;
+                                color: #9b9b9b;
+                                .header-icon {
+                                    margin-right: 10px;
+                                }
+                                .info-text {
+                                    font-size: 12px;
+                                }
+                                .call-number {
+                                    color: black;
+                                    font-size: 20px;
+                                    font-weight: 900;
+                                    position: relative;
+                                    .call {
+                                        color: #ef6c00;
+                                        position: absolute;
+                                        right: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .wraper-header-bottom {
+                        background-color: #212529;
+                        .header-bottom {
+                            display: flex;
+                            justify-content: space-between;
+                            list-style: none;
+                            color: white;
+                            max-width: 1170px;
+                            margin: auto;
+                            padding: 0 15px;
+                            .name-site {
+                                font-size: 30px;
+                                font-weight: 800;
+                                color: #ef6c00;
+                                letter-spacing: 4px;
+                            }
+                            .header-nav {
+                                font-size: 16px;
+                                font-weight: 900;
+                                display: flex;
+                                .nav-site {
+                                    transition: background-color .2s ease-in-out;
+                                    &:hover {
+                                        background-color: #ef6c00;
+                                    }
+                                    a {
+                                        padding: 13px 40px;
+                                        color: white;
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .wraper-icon-description {
+                    background-color: #212529;
+                    .icon-description {
+                        display: flex;
+                        justify-content: space-between;
+                        max-width: 1170px;
+                        margin: auto;
+                        .description-block {
+                            display: flex;
+                            color: white;
+                            font-size: 12px;
+                            line-height: 15px;
+                            padding: 12px 15px;
+                            .icon-block {
+                                margin-right: 25px;
+                            }
+                        }
+                    }
+                }
+                .main-service {
+                    padding-top: 50px;
+                    .service-main-container {
+                        padding: 44px 0 20px;
+                        .column-service {
+                            &:hover .service-main-image {
+                                transform: scale(1.1);
+                            }
+                            .service-main-link {
+                                display: block;
+                                max-width: 263px;
+                                height: 375px;
+                                position: relative;
+                                margin: 0 auto 30px;
+                                .wrap-service-main-image {
+                                    overflow: hidden;
+                                    position: relative;
+                                    display: block;
+                                    .service-main-image {
+                                        position: relative;
+                                        display: block;
+                                        padding-top: 142%;
+                                        transition: .2s ease-in-out;
+                                        .main-image {
+                                            position: absolute;
+                                            object-fit: cover;
+                                            object-position: center;
+                                            height: 100%;
+                                            margin: 0;
+                                            padding: 0;
+                                            width: 100%;
+                                            display: block;
+                                            top: 0;
+                                        }
+                                    }
+                                }
+                                .main-service-shadow {
+                                    min-height: 250px;
+                                    padding-top: 140px;
+                                    bottom: 0px;
+                                    position: absolute;
+                                    left: 0px;
+                                    right: 0px;
+                                    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 56%, rgba(0, 0, 0, 0.95) 100%);
+                                    .service-main-name {
+                                        font-size: 18px;
+                                        line-height: 22px;
+                                        font-weight: bold;
+                                        color: #fff;
+                                        padding-left: 10px;
+                                        padding-right: 10px;
+                                        text-align: center;
+                                    }
+                                    .service-main-btn {
+                                        &:hover {
+                                            background-color: #ef6c00;
+                                        }
+                                        margin: 28px auto;
+                                        font-weight: bold;
+                                        font-size: 12px;
+                                        line-height: 12px;
+                                        color: #fff;
+                                        text-transform: uppercase;
+                                        padding: 11px 28px;
+                                        border: 2px solid #ef6c00;
+                                        display: block;
+                                        border-radius: 0px;
+                                        max-width: 140px;
+                                        transition: background-color .2s ease-in-out;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .main-about {
+                    padding: 100px 0 70px;
+                    position: relative;
+                    .main-about-background {
+                        background-image: url(/Img/about_background.png);
+                        background-position: center center;
+                        background-size: auto 100%;
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        z-index: -10;
+                    }
+                    .main-container {
+                        .main-header {
+                            color: #fff;
+                        }
+                        .about-main-container {
+                            padding-top: 44px;
+                            margin: 0 -15px;
+                            .main-column {
+                                .about-main-link {
+                                    background-image: url(/Img/01.png);
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    height: 220px;
+                                    width: 100%;
+                                    margin: 0 auto 30px;
+                                    display: block;
+                                    .about-main-shadowcontainer {
+                                        height: 100%;
+                                        width: 100%;
+                                        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%);
+                                        position: relative;
+                                        &:hover .about-main-orange-container {
+                                            height: 140px;
+                                        }
+                                        .about-main-number {
+                                            font-size: 52px;
+                                            line-height: 38px;
+                                            font-weight: bold;
+                                            color: rgba(255, 255, 255, 0.65);
+                                            transition: color .2s ease-in-out;
+                                            padding: 25px 0 7px 20px;
+                                            display: block;
+                                        }
+                                        .about-main-orange-container {
+                                            background-color: #ef6c00;
+                                            padding: 16px 20px;
+                                            overflow: hidden;
+                                            height: 50px;
+                                            transition: height .2s ease-in-out;
+                                            position: absolute;
+                                            left: 0px;
+                                            right: 0px;
+                                            bottom: 0px;
+                                            .about-main-name {
+                                                font-size: 16px;
+                                                line-height: 18px;
+                                                font-weight: bold;
+                                                color: #fff;
+                                            }
+                                            .about-main-text {
+                                                font-size: 12px;
+                                                line-height: 16px;
+                                                color: #fff;
+                                                display: block;
+                                                margin-top: 7px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .main-column-02 {
+                                flex: 0 0 50%;
+                                max-width: 50%;
+                            }
+                            .main-column-04 {
+                                flex: 0 0 33.333333%;
+                                max-width: 33.333333%;
+                            }
+                            .main-column-06 {
+                                flex: 0 0 41.666667%;
+                                max-width: 41.666667%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
