@@ -7,6 +7,8 @@
     <title>НьюСтасЕвроСервис</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="SCSS/header.css">
+    <link rel="stylesheet" href="CSS/owl.carousel.min.css">
+    <link rel="stylesheet" href="CSS/owl.theme.default.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
@@ -67,7 +69,7 @@
                     <div class="info-service">
                         <div class="header-icon">
                             <svg width="21" height="29" viewBox="0 0 21 29">
-                <path fill="var(--prvcolor)"
+                <path 
                   d="M917.5,37A10.513,10.513,0,0,0,907,47.5c0,7.187,9.4,17.738,9.8,18.183a0.945,0.945,0,0,0,1.407,0c0.4-.445,9.8-11,9.8-18.183A10.513,10.513,0,0,0,917.5,37Zm0,26.6c-3.163-3.757-8.609-11.17-8.609-16.1a8.609,8.609,0,1,1,17.218,0C926.109,52.434,920.663,59.846,917.5,63.6Zm0-21.387a5.284,5.284,0,1,0,5.283,5.284A5.289,5.289,0,0,0,917.5,42.217Zm0,8.677a3.393,3.393,0,1,1,3.392-3.393A3.4,3.4,0,0,1,917.5,50.894Z"
                   transform="translate(-907 -37)"></path>
               </svg>
@@ -77,7 +79,7 @@
                     <div class="info-service">
                         <div class="header-icon">
                             <svg width="30" height="30" viewBox="0 0 30 30">
-                <path fill="var(--prvcolor)"
+                <path 
                   d="M980.8,44.157A14.992,14.992,0,1,0,961.152,63.8a14.583,14.583,0,0,0,5.823,1.2A14.973,14.973,0,0,0,980.8,44.157Zm-2.394,12.457a13.176,13.176,0,0,1-4.822,4.808,12.919,12.919,0,0,1-6.61,1.772,12.687,12.687,0,0,1-5.118-1.051,12.892,12.892,0,0,1-7-7.023,13.282,13.282,0,0,1,.722-11.734,13.17,13.17,0,0,1,4.806-4.809,13.178,13.178,0,0,1,13.2,0,13.2,13.2,0,0,1,4.823,4.809,12.83,12.83,0,0,1,1.771,6.6A12.962,12.962,0,0,1,978.408,56.613Zm-10.481-6.762v-8.5a0.946,0.946,0,0,0-.952-0.919,0.925,0.925,0,0,0-.9.919v8.632a0.757,0.757,0,0,1,.033.131,0.857,0.857,0,0,0,.246.739l4.9,4.907a0.931,0.931,0,0,0,1.262,0,0.883,0.883,0,0,0,0-1.279Z"
                   transform="translate(-952 -35)"></path>
               </svg>
@@ -89,7 +91,7 @@
                     </div>
                 </div>
             </header>
-            <section class="wraper-header-bottom">
+            <section class="wraper-header-bottom" id="myHeader">
                 <div class="header-bottom">
                     <div class="name-site">НьюСтасЕвроСервис</div>
                     <nav class="header-nav">
@@ -367,79 +369,32 @@
                 </div>
                 <div class="description-block">
                     <span class="icon-block"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-                  width="30" height="30" viewBox="0 0 1024.000000 1024.000000"
-                  preserveAspectRatio="xMidYMid meet">
-                 <g transform="translate(0.000000,1024.000000) scale(0.100000,-0.100000)"
-                  stroke="none">
-                 <path d="M4600 10230 c-183 -16 -305 -32 -515 -70 -128 -23 -332 -73 -475
-                 -115 -30 -9 -68 -20 -85 -24 -82 -23 -354 -125 -490 -183 -155 -67 -373 -178
-                 -550 -280 -61 -35 -307 -191 -328 -208 -7 -5 -70 -53 -142 -106 -71 -54 -132
-                 -100 -135 -103 -3 -3 -27 -24 -55 -46 -187 -149 -510 -472 -660 -660 -22 -27
-                 -42 -52 -46 -55 -3 -3 -18 -23 -34 -45 -17 -22 -32 -42 -36 -45 -35 -31 -298
-                 -421 -370 -550 -14 -25 -35 -61 -46 -80 -11 -19 -43 -82 -72 -140 -29 -58 -63
-                 -125 -76 -150 -13 -25 -35 -74 -50 -110 -15 -36 -35 -83 -45 -105 -47 -103
-                 -173 -465 -199 -570 -5 -22 -23 -94 -40 -160 -17 -66 -38 -158 -47 -205 -9
-                 -47 -20 -107 -26 -135 -58 -312 -86 -759 -69 -1108 10 -200 31 -443 45 -522 3
-                 -16 10 -61 16 -100 6 -38 15 -88 20 -110 5 -22 16 -78 25 -125 10 -47 23 -107
-                 30 -135 8 -27 23 -86 35 -130 38 -145 111 -368 160 -490 4 -11 18 -45 30 -75
-                 12 -30 33 -79 46 -108 13 -29 24 -55 24 -58 0 -13 143 -296 201 -400 34 -60
-                 67 -119 73 -131 6 -13 14 -23 19 -23 4 0 7 -5 7 -11 0 -26 314 -477 361 -519
-                 3 -3 12 -14 20 -26 107 -157 548 -598 757 -758 15 -11 29 -23 32 -26 30 -34
-                 516 -370 535 -370 3 0 24 -11 46 -26 146 -92 416 -224 684 -334 11 -4 36 -15
-                 55 -23 48 -20 297 -104 368 -123 31 -9 71 -19 87 -24 185 -51 205 -56 380 -90
-                 155 -31 258 -46 505 -73 154 -16 797 -16 950 1 257 28 349 41 547 81 135 27
-                 172 36 338 83 77 22 154 44 170 48 45 13 219 74 310 109 92 36 104 41 165 69
-                 25 11 63 28 85 37 54 24 300 147 350 175 178 100 329 192 345 210 3 3 51 36
-                 108 74 56 37 108 73 115 80 7 6 30 24 52 40 22 17 42 32 45 36 3 3 23 18 45
-                 35 22 16 51 39 65 51 14 12 61 52 105 90 103 88 401 386 489 489 38 44 78 91
-                 90 105 12 14 51 63 86 110 36 47 68 87 71 90 13 11 149 211 149 220 0 4 3 10
-                 8 12 15 6 97 140 212 343 28 49 151 295 175 350 9 22 27 60 38 85 23 50 23 51
-                 68 165 101 260 192 575 250 870 31 154 50 288 71 505 17 164 17 779 1 925 -32
-                 285 -33 292 -68 465 -32 161 -69 323 -85 370 -4 14 -13 45 -20 70 -36 132
-                 -129 406 -160 475 -5 11 -19 45 -31 75 -22 59 -29 76 -96 220 -44 95 -129 265
-                 -166 330 -11 19 -27 48 -35 63 -8 16 -20 31 -27 33 -7 3 -201 -184 -438 -421
-                 l-426 -426 34 -67 c101 -201 181 -425 238 -662 40 -165 83 -427 89 -542 l3
-                 -48 -225 0 c-218 0 -227 -1 -292 -26 -50 -19 -82 -40 -121 -78 -63 -63 -66
-                 -68 -97 -131 -21 -43 -24 -65 -25 -155 0 -98 2 -109 32 -171 41 -84 108 -151
-                 192 -191 l66 -32 235 -4 236 -4 -7 -62 c-7 -57 -11 -85 -40 -261 -12 -74 -79
-                 -344 -105 -423 -26 -79 -85 -246 -94 -267 -4 -11 -17 -41 -29 -67 -12 -26 -21
-                 -50 -21 -53 0 -4 -27 -61 -60 -129 -352 -728 -898 -1312 -1594 -1705 -102 -58
-                 -348 -181 -361 -181 -3 0 -24 -9 -48 -19 -173 -79 -571 -199 -762 -230 -176
-                 -29 -204 -33 -261 -40 l-62 -7 -4 231 c-4 225 -5 231 -32 290 -36 80 -121 165
-                 -200 202 -48 22 -79 28 -149 31 -53 3 -101 -1 -120 -8 -143 -54 -222 -128
-                 -267 -251 -18 -47 -20 -81 -20 -274 l0 -221 -72 8 c-243 25 -559 99 -824 192
-                 -167 58 -433 177 -569 254 -33 19 -80 46 -105 60 -47 26 -295 190 -327 216
-                 -10 8 -58 46 -107 85 -251 199 -484 435 -671 681 -22 29 -44 57 -50 64 -12 13
-                 -126 186 -177 266 -85 136 -184 325 -256 495 -53 124 -137 353 -156 425 -50
-                 188 -79 315 -96 414 -11 67 -25 145 -30 175 -6 30 -10 67 -10 82 l0 27 228 4
-                 227 4 65 30 c107 50 188 144 219 256 8 27 12 80 10 130 -3 68 -10 95 -36 148
-                 -46 94 -123 163 -224 200 -47 18 -80 20 -273 20 l-219 0 6 53 c14 113 43 293
-                 57 352 77 326 145 536 252 775 26 59 120 245 146 290 11 19 35 62 54 95 98
-                 171 227 353 386 545 60 71 371 382 442 442 192 159 374 288 545 386 33 19 76
-                 43 95 54 81 47 351 178 366 178 3 0 24 9 47 19 41 19 125 49 262 96 87 29 212
-                 63 390 105 59 14 239 43 353 57 l52 6 0 -219 c0 -193 2 -226 20 -273 37 -101
-                 106 -178 200 -224 54 -27 79 -33 151 -35 179 -8 313 74 386 236 26 55 27 65
-                 31 286 l4 229 47 -7 c25 -3 73 -10 106 -15 33 -6 89 -15 125 -21 36 -5 83 -14
-                 105 -20 91 -21 163 -40 220 -55 33 -10 74 -21 90 -25 137 -36 402 -143 610
-                 -246 196 -96 238 -120 392 -220 l112 -73 416 415 c228 229 415 419 415 423 0
-                 4 -42 37 -92 74 -51 37 -98 71 -104 76 -10 8 -198 133 -236 156 -14 9 -121 71
-                 -218 128 -45 26 -367 187 -374 187 -3 0 -29 11 -58 24 -203 92 -541 205 -793
-                 265 -302 71 -460 97 -745 121 -122 10 -735 10 -860 0z"/>
-                 <path d="M9234 9471 c-23 -4 -72 -22 -110 -41 -65 -31 -183 -147 -2093 -2057
-                 -1113 -1113 -2028 -2022 -2032 -2021 -6 3 -220 173 -477 381 -54 43 -104 83
-                 -112 90 -8 7 -37 30 -65 52 -27 22 -52 42 -55 45 -3 3 -23 18 -45 35 -22 16
-                 -42 32 -45 35 -3 3 -50 41 -105 85 -103 83 -369 296 -395 318 -9 6 -38 30 -65
-                 52 -28 21 -52 42 -55 45 -3 3 -23 19 -45 36 -43 31 -69 52 -124 99 -94 80
-                 -151 110 -238 126 -174 32 -350 -58 -426 -219 -30 -62 -32 -75 -32 -172 0 -80
-                 4 -113 18 -139 9 -19 17 -38 17 -43 0 -9 43 -71 65 -93 11 -11 203 -168 246
-                 -200 30 -23 121 -96 345 -276 50 -41 109 -87 130 -104 21 -16 97 -77 168 -135
-                 72 -58 143 -114 157 -125 30 -23 127 -100 345 -276 50 -41 109 -87 130 -104
-                 21 -16 97 -77 168 -135 72 -58 143 -114 157 -125 15 -11 59 -46 98 -78 39 -32
-                 96 -69 126 -82 101 -45 240 -42 344 6 36 17 533 508 2219 2193 1196 1194 2186
-                 2189 2201 2211 45 64 71 147 71 224 0 112 -37 197 -120 282 -97 98 -217 134
-                 -366 110z"/>
-                 </g>
-                 </svg></span>
+                        width="30" height="30" viewBox="0 0 512.000000 512.000000"
+                        preserveAspectRatio="xMidYMid meet">
+                       <metadata>
+                       Created by potrace 1.15, written by Peter Selinger 2001-2017
+                       </metadata>
+                       <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                        stroke="none">
+                       <path d="M2255 5108 c-105 -12 -298 -51 -409 -83 -994 -288 -1724 -1155 -1835
+                       -2177 -14 -125 -14 -451 0 -576 128 -1181 1080 -2133 2261 -2261 125 -14 451
+                       -14 576 0 1181 128 2133 1080 2261 2261 14 125 14 451 0 576 -128 1181 -1080
+                       2133 -2261 2261 -115 13 -479 12 -593 -1z m145 -473 l0 -155 160 0 160 0 0
+                       154 0 154 43 -4 c690 -74 1281 -430 1658 -998 200 -301 322 -648 363 -1023 l4
+                       -43 -154 0 -154 0 0 -165 0 -165 153 0 153 0 -8 -77 c-4 -43 -19 -134 -34
+                       -203 -185 -905 -928 -1612 -1839 -1754 -55 -8 -119 -17 -142 -20 l-43 -4 0
+                       154 0 154 -160 0 -160 0 0 -154 0 -154 -42 4 c-691 74 -1283 430 -1659 998
+                       -200 301 -322 648 -363 1024 l-4 42 154 0 154 0 0 160 0 160 -154 0 -154 0 4
+                       43 c63 590 334 1113 769 1485 344 294 767 480 1205 531 41 5 78 9 83 10 4 0 7
+                       -69 7 -154z"/>
+                       <path d="M1413 3360 c-80 -19 -123 -75 -123 -160 0 -67 24 -111 77 -143 21
+                       -12 224 -130 453 -262 l415 -240 7 -53 c14 -96 78 -185 170 -234 37 -20 58
+                       -23 148 -23 120 0 160 15 230 85 67 67 84 111 86 219 l2 94 424 244 c232 135
+                       429 252 436 261 14 19 16 76 2 102 -12 23 -62 40 -92 32 -13 -4 -210 -115
+                       -438 -246 -409 -237 -414 -239 -439 -223 -86 54 -107 61 -192 65 -70 4 -94 1
+                       -130 -15 l-45 -20 -379 219 c-561 324 -542 315 -612 298z"/>
+                       </g>
+                       </svg></span>
                     <span class="description">Быстро и качественно</span>
                 </div>
             </div>
@@ -456,7 +411,7 @@
                                 </div>
                             </div>
                             <div class="main-service-shadow">
-                                <div class="service-main-name">engine</div>
+                                <div class="service-main-name">Подвеска</div>
                                 <div class="service-main-btn">Подробнее</div>
                             </div>
                         </a>
@@ -469,7 +424,7 @@
                                 </div>
                             </div>
                             <div class="main-service-shadow">
-                                <div class="service-main-name">engine</div>
+                                <div class="service-main-name">Автоэлектрика</div>
                                 <div class="service-main-btn">Подробнее</div>
                             </div>
                         </a>
@@ -482,7 +437,7 @@
                                 </div>
                             </div>
                             <span class="main-service-shadow">
-                    <div class="service-main-name">engine</div>
+                    <div class="service-main-name">Диагностика</div>
                     <div class="service-main-btn">Подробнее</div>
                   </span></a>
                     </div>
@@ -494,7 +449,7 @@
                                 </div>
                             </div>
                             <span class="main-service-shadow">
-                    <div class="service-main-name">engine</div>
+                    <div class="service-main-name">Мойка и уборка</div>
                     <div class="service-main-btn">Подробнее</div>
                   </span></a>
                     </div>
@@ -506,7 +461,7 @@
                                 </div>
                             </div>
                             <div class="main-service-shadow">
-                                <div class="service-main-name">engine</div>
+                                <div class="service-main-name">Двигатель</div>
                                 <div class="service-main-btn">Подробнее</div>
                             </div>
                         </a>
@@ -519,7 +474,7 @@
                                 </div>
                             </div>
                             <span class="main-service-shadow">
-                    <div class="service-main-name">engine</div>
+                    <div class="service-main-name">Трансмиссия</div>
                     <div class="service-main-btn">Подробнее</div>
                   </span></a>
                     </div>
@@ -531,7 +486,7 @@
                                 </div>
                             </div>
                             <div class="main-service-shadow">
-                                <div class="service-main-name">engine</div>
+                                <div class="service-main-name">Шиномонтаж</div>
                                 <div class="service-main-btn">Подробнее</div>
                             </div>
                         </a>
@@ -584,8 +539,7 @@
                 <h2 class="main-header">Доверьте свой<br>автомобиль именно нам</h2>
                 <div class="about-main-container row">
                     <div class="main-column">
-                        <a href="" class="about-main-link">
-                            <!--<img src="Img/01.png" alt="" class="about-main-image">-->
+                        <a href="" class="about-main-link" style="background-image: url(Img/01.png);">
                             <div class="about-main-shadowcontainer">
                                 <span class="about-main-number">01</span>
                                 <div class="about-main-orange-container">
@@ -598,8 +552,7 @@
                         </a>
                     </div>
                     <div class="main-column main-column-02">
-                        <a href="" class="about-main-link">
-                            <!--<img src="Img/02.png" alt="" class="about-main-image">-->
+                        <a href="" class="about-main-link" style="background-image: url(Img/02.png);">
                             <div class="about-main-shadowcontainer">
                                 <span class="about-main-number">02</span>
                                 <div class="about-main-orange-container">
@@ -612,8 +565,7 @@
                         </a>
                     </div>
                     <div class="main-column">
-                        <a href="" class="about-main-link">
-                            <!--<img src="Img/03.png" alt="" class="about-main-image">-->
+                        <a href="" class="about-main-link" style="background-image: url(Img/03.png);">
                             <div class="about-main-shadowcontainer">
                                 <span class="about-main-number">03</span>
                                 <div class="about-main-orange-container">
@@ -626,8 +578,7 @@
                         </a>
                     </div>
                     <div class="main-column main-column-02 main-column-04">
-                        <a href="" class="about-main-link">
-                            <!--<img src="Img/04.png" alt="" class="about-main-image">-->
+                        <a href="" class="about-main-link" style="background-image: url(Img/04.png);">
                             <div class="about-main-shadowcontainer">
                                 <span class="about-main-number">04</span>
                                 <div class="about-main-orange-container">
@@ -640,8 +591,7 @@
                         </a>
                     </div>
                     <div class="main-column">
-                        <a href="" class="about-main-link">
-                            <!--          <img src="" alt="" class="about-main-image">-->
+                        <a href="" class="about-main-link" style="background-image: url(Img/01.png);">
                             <div class="about-main-shadowcontainer">
                                 <span class="about-main-number">05</span>
                                 <div class="about-main-orange-container">
@@ -654,8 +604,7 @@
                         </a>
                     </div>
                     <div class="main-column main-column-02 main-column-06">
-                        <a href="" class="about-main-link">
-                            <!--          <img src="" alt="" class="about-main-image">-->
+                        <a href="" class="about-main-link" style="background-image: url(Img/01.png);">
                             <div class="about-main-shadowcontainer">
                                 <span class="about-main-number">06</span>
                                 <div class="about-main-orange-container">
@@ -670,7 +619,75 @@
                 </div>
             </div>
         </section>
+        <section class="logo-carousel">
+            <div class="main-container">
+                <h2 class="main-header">Обслуживаем все<br>популярные марки автомобилей</h2>
+                <div class="wrap-owl-carousel">
+                    <div class="owl-carousel owl-theme">
+                        <img src="Img/audi.png" alt="" class="owl-images">
+                        <img src="Img/bmw.png" alt="" class="owl-images">
+                        <img src="Img/chrysler.png" alt="" class="owl-images">
+                        <img src="Img/jaguar.png" alt="" class="owl-images">
+                        <img src="Img/jeep.png" alt="" class="owl-images">
+                        <img src="Img/mazda.png" alt="" class="owl-images">
+                        <img src="Img/mercedec.png" alt="" class="owl-images">
+                        <img src="Img/mitsubishi.png" alt="" class="owl-images">
+                        <img src="Img/nissan.png" alt="" class="owl-images">
+                        <img src="Img/opel.png" alt="" class="owl-images">
+                        <img src="Img/peugeut.png" alt="" class="owl-images">
+                        <img src="Img/porshe.png" alt="" class="owl-images">
+                        <img src="Img/volvo.png" alt="" class="owl-images">
+                        <img src="Img/vw.png" alt="" class="owl-images">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-banner">
+            <div class="main-container">
+                <div class="row">
+                    <div class="main-column-02 main_banner_content">
+                        <h3 class="main-banner-head">СЛОМАЛСЯ АВТОМОБИЛЬ?<br>МЫ ПОЧИНИМ!</h3>
+                        <p class="main-banner-text">Не стесняйтесь, наши специалисты помогут Вам, окажут бесплатную консультацию или запишут на посещение нашего автосервиса.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+    <script src="JS/jquery.js"></script>
+    <script src="JS/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

@@ -9,6 +9,11 @@
                 fill: #ef6c00;
                 vertical-align: middle;
             }
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
             a {
                 text-decoration: none;
             }
@@ -86,6 +91,7 @@
                     }
                     .wraper-header-bottom {
                         background-color: #212529;
+                        z-index: 1000;
                         .header-bottom {
                             display: flex;
                             justify-content: space-between;
@@ -146,6 +152,9 @@
                             &:hover .service-main-image {
                                 transform: scale(1.1);
                             }
+                            &:hover .service-main-btn {
+                                background-color: #ef6c00;
+                            }
                             .service-main-link {
                                 display: block;
                                 max-width: 263px;
@@ -192,9 +201,6 @@
                                         text-align: center;
                                     }
                                     .service-main-btn {
-                                        &:hover {
-                                            background-color: #ef6c00;
-                                        }
                                         margin: 28px auto;
                                         font-weight: bold;
                                         font-size: 12px;
@@ -237,7 +243,6 @@
                             margin: 0 -15px;
                             .main-column {
                                 .about-main-link {
-                                    background-image: url(/Img/01.png);
                                     background-position: center;
                                     background-repeat: no-repeat;
                                     background-size: cover;
@@ -252,6 +257,9 @@
                                         position: relative;
                                         &:hover .about-main-orange-container {
                                             height: 140px;
+                                        }
+                                        &:hover .about-main-number {
+                                            color: white;
                                         }
                                         .about-main-number {
                                             font-size: 52px;
@@ -300,6 +308,51 @@
                             .main-column-06 {
                                 flex: 0 0 41.666667%;
                                 max-width: 41.666667%;
+                            }
+                        }
+                    }
+                }
+                .logo-carousel {
+                    padding-top: 130px;
+                    .main-container {
+                        .wrap-owl-carousel {
+                            padding: 44px 0 80px;
+                            .owl-carousel {
+                                .owl-images {
+                                    width: 60px;
+                                    height: 60px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .main-banner {
+                    background-image: url(/Img/main_banner_bg.png);
+                    background-repeat: no-repeat;
+                    background-position: top left;
+                    background-size: auto 100%;
+                    padding: 220px 0 70px;
+                    .main-container {
+                        .row {
+                            .main-column-02 {
+                                .main-banner-head {
+                                    font-size: 38px;
+                                    line-height: 42px;
+                                    color: #fff;
+                                    font-weight: bold;
+                                    margin-bottom: 10px;
+                                }
+                                .main-banner-text {
+                                    color: #fff;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    margin-bottom: 25px;
+                                }
+                                flex: 0 0 50%;
+                                max-width: 50%;
+                            }
+                            .main_banner_content {
+                                min-height: 258px;
                             }
                         }
                     }

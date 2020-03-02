@@ -13,6 +13,12 @@ body svg {
   vertical-align: middle;
 }
 
+body .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 body a {
   text-decoration: none;
 }
@@ -118,6 +124,7 @@ body .wraper .header .header-top .info-container .info-service .call-number .cal
 
 body .wraper .header .wraper-header-bottom {
   background-color: #212529;
+  z-index: 1000;
 }
 
 body .wraper .header .wraper-header-bottom .header-bottom {
@@ -206,6 +213,10 @@ body .wraper .main-service .service-main-container .column-service:hover .servic
           transform: scale(1.1);
 }
 
+body .wraper .main-service .service-main-container .column-service:hover .service-main-btn {
+  background-color: #ef6c00;
+}
+
 body .wraper .main-service .service-main-container .column-service .service-main-link {
   display: block;
   max-width: 263px;
@@ -279,10 +290,6 @@ body .wraper .main-service .service-main-container .column-service .service-main
   transition: background-color .2s ease-in-out;
 }
 
-body .wraper .main-service .service-main-container .column-service .service-main-link .main-service-shadow .service-main-btn:hover {
-  background-color: #ef6c00;
-}
-
 body .wraper .main-about {
   padding: 100px 0 70px;
   position: relative;
@@ -311,7 +318,6 @@ body .wraper .main-about .main-container .about-main-container {
 }
 
 body .wraper .main-about .main-container .about-main-container .main-column .about-main-link {
-  background-image: url(/Img/01.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -331,6 +337,10 @@ body .wraper .main-about .main-container .about-main-container .main-column .abo
 
 body .wraper .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer:hover .about-main-orange-container {
   height: 140px;
+}
+
+body .wraper .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer:hover .about-main-number {
+  color: white;
 }
 
 body .wraper .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer .about-main-number {
@@ -391,5 +401,52 @@ body .wraper .main-about .main-container .about-main-container .main-column-06 {
       -ms-flex: 0 0 41.666667%;
           flex: 0 0 41.666667%;
   max-width: 41.666667%;
+}
+
+body .wraper .logo-carousel {
+  padding-top: 130px;
+}
+
+body .wraper .logo-carousel .main-container .wrap-owl-carousel {
+  padding: 44px 0 80px;
+}
+
+body .wraper .logo-carousel .main-container .wrap-owl-carousel .owl-carousel .owl-images {
+  width: 60px;
+  height: 60px;
+}
+
+body .wraper .main-banner {
+  background-image: url(/Img/main_banner_bg.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: auto 100%;
+  padding: 220px 0 70px;
+}
+
+body .wraper .main-banner .main-container .row .main-column-02 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+}
+
+body .wraper .main-banner .main-container .row .main-column-02 .main-banner-head {
+  font-size: 38px;
+  line-height: 42px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+body .wraper .main-banner .main-container .row .main-column-02 .main-banner-text {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+
+body .wraper .main-banner .main-container .row .main_banner_content {
+  min-height: 258px;
 }
 /*# sourceMappingURL=header.css.map */
