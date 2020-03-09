@@ -1,0 +1,21 @@
+$base-color: #ef6c00;
+$header-icon-bgc: #212529;
+$header-info-color: #9b9b9b;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', ;
+    margin: 0;
+    svg {
+        fill: $base-color;
+        vertical-align: middle;
+    }
+    a {
+        text-decoration: none;
+    }
+    ul {
+        list-style: none;
+    }
+}

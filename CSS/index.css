@@ -13,14 +13,18 @@ body svg {
   vertical-align: middle;
 }
 
+body a {
+  text-decoration: none;
+}
+
+body ul {
+  list-style: none;
+}
+
 body .sticky {
   position: fixed;
   top: 0;
   width: 100%;
-}
-
-body a {
-  text-decoration: none;
 }
 
 body .row {
@@ -77,8 +81,6 @@ body .wraper .header .header-top {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 20px auto;
-  padding: 0 15px;
-  max-width: 1170px;
 }
 
 body .wraper .header .header-top .info-container {
@@ -136,9 +138,6 @@ body .wraper .header .wraper-header-bottom .header-bottom {
           justify-content: space-between;
   list-style: none;
   color: white;
-  max-width: 1170px;
-  margin: auto;
-  padding: 0 15px;
 }
 
 body .wraper .header .wraper-header-bottom .header-bottom .name-site {
@@ -159,34 +158,93 @@ body .wraper .header .wraper-header-bottom .header-bottom .header-nav {
 body .wraper .header .wraper-header-bottom .header-bottom .header-nav .nav-site {
   -webkit-transition: background-color .2s ease-in-out;
   transition: background-color .2s ease-in-out;
+  position: relative;
 }
 
 body .wraper .header .wraper-header-bottom .header-bottom .header-nav .nav-site:hover {
   background-color: #ef6c00;
 }
 
-body .wraper .header .wraper-header-bottom .header-bottom .header-nav .nav-site a {
+body .wraper .header .wraper-header-bottom .header-bottom .header-nav .nav-site:hover .wrap-nav-block {
+  display: block;
+}
+
+body .wraper .header .wraper-header-bottom .header-bottom .header-nav .nav-site-link {
   padding: 13px 40px;
   color: white;
   display: block;
 }
 
-body .wraper .wraper-icon-description {
+body .wraper .header .wraper-header-bottom .header-bottom .header-nav .wrap-nav-block {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -1299px;
+  z-index: 900;
+  min-width: 2560px;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+body .wraper .header .wraper-header-bottom .header-bottom .header-nav .wrap-nav-block .nav-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 10px;
+}
+
+body .wraper .header .wraper-header-bottom .header-bottom .header-nav .wrap-nav-block .nav-block .nav-grids .nav-grids-link {
+  color: #212529;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+body .wraper .header .wraper-header-bottom .header-bottom .header-nav .wrap-nav-block .nav-block .nav-grids .nav-grids-link:hover {
+  color: #ef6c00;
+}
+
+body .wraper .header .wraper-header-bottom .header-bottom .header-nav .wrap-nav-block .nav-block .nav-grids .nav-grids-link::after {
+  background: #ef6c00;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  width: 100%;
+}
+
+body .wraper .header .wraper-header-bottom .header-bottom .header-nav .wrap-nav-block .nav-block .nav-grids .lists {
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+body .wraper .header .wraper-header-bottom .header-bottom .header-nav .wrap-nav-block .nav-block .nav-grids .lists .nav-grids-list {
+  margin: 0;
+  line-height: 20px;
+}
+
+body .wraper .header .wraper-header-bottom .header-bottom .header-nav .wrap-nav-block .nav-block .nav-grids .lists .nav-grids-list .list-link {
+  color: #9b9b9b;
+  font-size: 14px;
+}
+
+body .wraper .header .wraper-header-bottom .header-bottom .header-nav .wrap-nav-block .nav-block .nav-grids .lists .nav-grids-list .list-link:hover {
+  color: #ef6c00;
+}
+
+body .wraper-icon-description {
   background-color: #212529;
 }
 
-body .wraper .wraper-icon-description .icon-description {
+body .wraper-icon-description .icon-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1170px;
-  margin: auto;
 }
 
-body .wraper .wraper-icon-description .icon-description .description-block {
+body .wraper-icon-description .icon-description .description-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,28 +254,28 @@ body .wraper .wraper-icon-description .icon-description .description-block {
   padding: 12px 15px;
 }
 
-body .wraper .wraper-icon-description .icon-description .description-block .icon-block {
+body .wraper-icon-description .icon-description .description-block .icon-block {
   margin-right: 25px;
 }
 
-body .wraper .main-service {
+body .main-service {
   padding-top: 50px;
 }
 
-body .wraper .main-service .service-main-container {
+body .main-service .service-main-container {
   padding: 44px 0 20px;
 }
 
-body .wraper .main-service .service-main-container .column-service:hover .service-main-image {
+body .main-service .service-main-container .column-service:hover .service-main-image {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-body .wraper .main-service .service-main-container .column-service:hover .service-main-btn {
+body .main-service .service-main-container .column-service:hover .service-main-btn {
   background-color: #ef6c00;
 }
 
-body .wraper .main-service .service-main-container .column-service .service-main-link {
+body .main-service .service-main-container .column-service .service-main-link {
   display: block;
   max-width: 263px;
   height: 375px;
@@ -225,13 +283,13 @@ body .wraper .main-service .service-main-container .column-service .service-main
   margin: 0 auto 30px;
 }
 
-body .wraper .main-service .service-main-container .column-service .service-main-link .wrap-service-main-image {
+body .main-service .service-main-container .column-service .service-main-link .wrap-service-main-image {
   overflow: hidden;
   position: relative;
   display: block;
 }
 
-body .wraper .main-service .service-main-container .column-service .service-main-link .wrap-service-main-image .service-main-image {
+body .main-service .service-main-container .column-service .service-main-link .wrap-service-main-image .service-main-image {
   position: relative;
   display: block;
   padding-top: 142%;
@@ -239,7 +297,7 @@ body .wraper .main-service .service-main-container .column-service .service-main
   transition: .2s ease-in-out;
 }
 
-body .wraper .main-service .service-main-container .column-service .service-main-link .wrap-service-main-image .service-main-image .main-image {
+body .main-service .service-main-container .column-service .service-main-link .wrap-service-main-image .service-main-image .main-image {
   position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
@@ -253,7 +311,7 @@ body .wraper .main-service .service-main-container .column-service .service-main
   top: 0;
 }
 
-body .wraper .main-service .service-main-container .column-service .service-main-link .main-service-shadow {
+body .main-service .service-main-container .column-service .service-main-link .main-service-shadow {
   min-height: 250px;
   padding-top: 140px;
   bottom: 0px;
@@ -264,7 +322,7 @@ body .wraper .main-service .service-main-container .column-service .service-main
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 56%, rgba(0, 0, 0, 0.95) 100%);
 }
 
-body .wraper .main-service .service-main-container .column-service .service-main-link .main-service-shadow .service-main-name {
+body .main-service .service-main-container .column-service .service-main-link .main-service-shadow .service-main-name {
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
@@ -274,7 +332,7 @@ body .wraper .main-service .service-main-container .column-service .service-main
   text-align: center;
 }
 
-body .wraper .main-service .service-main-container .column-service .service-main-link .main-service-shadow .service-main-btn {
+body .main-service .service-main-container .column-service .service-main-link .main-service-shadow .service-main-btn {
   margin: 28px auto;
   font-weight: bold;
   font-size: 12px;
@@ -290,13 +348,12 @@ body .wraper .main-service .service-main-container .column-service .service-main
   transition: background-color .2s ease-in-out;
 }
 
-body .wraper .main-about {
+body .main-about {
   padding: 100px 0 70px;
   position: relative;
 }
 
-body .wraper .main-about .main-about-background {
-  background-image: url(/Img/about_background.png);
+body .main-about .main-about-background {
   background-position: center center;
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -308,16 +365,16 @@ body .wraper .main-about .main-about-background {
   z-index: -10;
 }
 
-body .wraper .main-about .main-container .main-header {
+body .main-about .main-container .main-header {
   color: #fff;
 }
 
-body .wraper .main-about .main-container .about-main-container {
+body .main-about .main-container .about-main-container {
   padding-top: 44px;
   margin: 0 -15px;
 }
 
-body .wraper .main-about .main-container .about-main-container .main-column .about-main-link {
+body .main-about .main-container .about-main-container .main-column .about-main-link {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -327,7 +384,7 @@ body .wraper .main-about .main-container .about-main-container .main-column .abo
   display: block;
 }
 
-body .wraper .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer {
+body .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer {
   height: 100%;
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.85)));
@@ -335,15 +392,15 @@ body .wraper .main-about .main-container .about-main-container .main-column .abo
   position: relative;
 }
 
-body .wraper .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer:hover .about-main-orange-container {
+body .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer:hover .about-main-orange-container {
   height: 140px;
 }
 
-body .wraper .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer:hover .about-main-number {
+body .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer:hover .about-main-number {
   color: white;
 }
 
-body .wraper .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer .about-main-number {
+body .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer .about-main-number {
   font-size: 52px;
   line-height: 38px;
   font-weight: bold;
@@ -354,9 +411,9 @@ body .wraper .main-about .main-container .about-main-container .main-column .abo
   display: block;
 }
 
-body .wraper .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer .about-main-orange-container {
+body .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer .about-main-orange-container {
   background-color: #ef6c00;
-  padding: 16px 20px;
+  padding: 13px 20px;
   overflow: hidden;
   height: 50px;
   -webkit-transition: height .2s ease-in-out;
@@ -367,71 +424,71 @@ body .wraper .main-about .main-container .about-main-container .main-column .abo
   bottom: 0px;
 }
 
-body .wraper .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer .about-main-orange-container .about-main-name {
+body .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer .about-main-orange-container .about-main-name {
   font-size: 16px;
   line-height: 18px;
   font-weight: bold;
   color: #fff;
 }
 
-body .wraper .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer .about-main-orange-container .about-main-text {
+body .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer .about-main-orange-container .about-main-text {
   font-size: 12px;
   line-height: 16px;
   color: #fff;
   display: block;
-  margin-top: 7px;
+  margin-top: 13px;
 }
 
-body .wraper .main-about .main-container .about-main-container .main-column-02 {
+body .main-about .main-container .about-main-container .main-column-02 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
   max-width: 50%;
 }
 
-body .wraper .main-about .main-container .about-main-container .main-column-04 {
+body .main-about .main-container .about-main-container .main-column-04 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 33.333333%;
           flex: 0 0 33.333333%;
   max-width: 33.333333%;
 }
 
-body .wraper .main-about .main-container .about-main-container .main-column-06 {
+body .main-about .main-container .about-main-container .main-column-06 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 41.666667%;
           flex: 0 0 41.666667%;
   max-width: 41.666667%;
 }
 
-body .wraper .logo-carousel {
+body .logo-carousel {
   padding-top: 130px;
 }
 
-body .wraper .logo-carousel .main-container .wrap-owl-carousel {
+body .logo-carousel .main-container .wrap-owl-carousel {
   padding: 44px 0 80px;
 }
 
-body .wraper .logo-carousel .main-container .wrap-owl-carousel .owl-carousel .owl-images {
+body .logo-carousel .main-container .wrap-owl-carousel .owl-carousel .owl-images {
   width: 60px;
   height: 60px;
+  margin: auto;
 }
 
-body .wraper .main-banner {
-  background-image: url(/Img/main_banner_bg.png);
+body .main-banner {
   background-repeat: no-repeat;
   background-position: top left;
   background-size: auto 100%;
   padding: 220px 0 70px;
 }
 
-body .wraper .main-banner .main-container .row .main-column-02 {
+body .main-banner .main-container .row .main-column-02 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
   max-width: 50%;
 }
 
-body .wraper .main-banner .main-container .row .main-column-02 .main-banner-head {
+body .main-banner .main-container .row .main-column-02 .main-banner-head {
   font-size: 38px;
   line-height: 42px;
   color: #fff;
@@ -439,14 +496,20 @@ body .wraper .main-banner .main-container .row .main-column-02 .main-banner-head
   margin-bottom: 10px;
 }
 
-body .wraper .main-banner .main-container .row .main-column-02 .main-banner-text {
+body .main-banner .main-container .row .main-column-02 .main-banner-text {
   color: #fff;
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 25px;
 }
 
-body .wraper .main-banner .main-container .row .main_banner_content {
+body .main-banner .main-container .row .main_banner_content {
   min-height: 258px;
 }
-/*# sourceMappingURL=header.css.map */
+
+body .main-banner .main-container .row .main-banner-tell .tell-number {
+  color: #ef6c00;
+  font-size: 20px;
+  font-weight: 900;
+}
+/*# sourceMappingURL=index.css.map */
