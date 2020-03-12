@@ -21,6 +21,11 @@ body ul {
   list-style: none;
 }
 
+body #topcontrol {
+  margin: 0 30px 30px 0;
+  z-index: 2;
+}
+
 body .sticky {
   position: fixed;
   top: 0;
@@ -71,6 +76,12 @@ body .main-column {
           flex: 0 0 25%;
   max-width: 25%;
   padding: 0 15px;
+}
+
+body .wraper {
+  background: white;
+  position: relative;
+  z-index: 1;
 }
 
 body .wraper .header .header-top {
@@ -153,6 +164,7 @@ body .wraper .header .wraper-header-bottom .header-bottom .header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0;
 }
 
 body .wraper .header .wraper-header-bottom .header-bottom .header-nav .nav-site {
@@ -231,20 +243,19 @@ body .wraper .header .wraper-header-bottom .header-bottom .header-nav .wrap-nav-
   color: #ef6c00;
 }
 
-body .wraper-icon-description {
+body .wraper .wraper-icon-description {
   background-color: #212529;
 }
 
-body .wraper-icon-description .icon-description {
+body .wraper .wraper-icon-description .icon-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-body .wraper-icon-description .icon-description .description-block {
+body .wraper .wraper-icon-description .icon-description .description-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -254,28 +265,28 @@ body .wraper-icon-description .icon-description .description-block {
   padding: 12px 15px;
 }
 
-body .wraper-icon-description .icon-description .description-block .icon-block {
+body .wraper .wraper-icon-description .icon-description .description-block .icon-block {
   margin-right: 25px;
 }
 
-body .main-service {
+body .wraper .main-service {
   padding-top: 50px;
 }
 
-body .main-service .service-main-container {
+body .wraper .main-service .service-main-container {
   padding: 44px 0 20px;
 }
 
-body .main-service .service-main-container .column-service:hover .service-main-image {
+body .wraper .main-service .service-main-container .column-service:hover .service-main-image {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-body .main-service .service-main-container .column-service:hover .service-main-btn {
+body .wraper .main-service .service-main-container .column-service:hover .service-main-btn {
   background-color: #ef6c00;
 }
 
-body .main-service .service-main-container .column-service .service-main-link {
+body .wraper .main-service .service-main-container .column-service .service-main-link {
   display: block;
   max-width: 263px;
   height: 375px;
@@ -283,13 +294,13 @@ body .main-service .service-main-container .column-service .service-main-link {
   margin: 0 auto 30px;
 }
 
-body .main-service .service-main-container .column-service .service-main-link .wrap-service-main-image {
+body .wraper .main-service .service-main-container .column-service .service-main-link .wrap-service-main-image {
   overflow: hidden;
   position: relative;
   display: block;
 }
 
-body .main-service .service-main-container .column-service .service-main-link .wrap-service-main-image .service-main-image {
+body .wraper .main-service .service-main-container .column-service .service-main-link .wrap-service-main-image .service-main-image {
   position: relative;
   display: block;
   padding-top: 142%;
@@ -297,7 +308,7 @@ body .main-service .service-main-container .column-service .service-main-link .w
   transition: .2s ease-in-out;
 }
 
-body .main-service .service-main-container .column-service .service-main-link .wrap-service-main-image .service-main-image .main-image {
+body .wraper .main-service .service-main-container .column-service .service-main-link .wrap-service-main-image .service-main-image .main-image {
   position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
@@ -311,7 +322,7 @@ body .main-service .service-main-container .column-service .service-main-link .w
   top: 0;
 }
 
-body .main-service .service-main-container .column-service .service-main-link .main-service-shadow {
+body .wraper .main-service .service-main-container .column-service .service-main-link .main-service-shadow {
   min-height: 250px;
   padding-top: 140px;
   bottom: 0px;
@@ -322,7 +333,7 @@ body .main-service .service-main-container .column-service .service-main-link .m
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 56%, rgba(0, 0, 0, 0.95) 100%);
 }
 
-body .main-service .service-main-container .column-service .service-main-link .main-service-shadow .service-main-name {
+body .wraper .main-service .service-main-container .column-service .service-main-link .main-service-shadow .service-main-name {
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
@@ -332,7 +343,7 @@ body .main-service .service-main-container .column-service .service-main-link .m
   text-align: center;
 }
 
-body .main-service .service-main-container .column-service .service-main-link .main-service-shadow .service-main-btn {
+body .wraper .main-service .service-main-container .column-service .service-main-link .main-service-shadow .service-main-btn {
   margin: 28px auto;
   font-weight: bold;
   font-size: 12px;
@@ -348,12 +359,12 @@ body .main-service .service-main-container .column-service .service-main-link .m
   transition: background-color .2s ease-in-out;
 }
 
-body .main-about {
+body .wraper .main-about {
   padding: 100px 0 70px;
   position: relative;
 }
 
-body .main-about .main-about-background {
+body .wraper .main-about .main-about-background {
   background-position: center center;
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -365,16 +376,16 @@ body .main-about .main-about-background {
   z-index: -10;
 }
 
-body .main-about .main-container .main-header {
+body .wraper .main-about .main-container .main-header {
   color: #fff;
 }
 
-body .main-about .main-container .about-main-container {
+body .wraper .main-about .main-container .about-main-container {
   padding-top: 44px;
   margin: 0 -15px;
 }
 
-body .main-about .main-container .about-main-container .main-column .about-main-link {
+body .wraper .main-about .main-container .about-main-container .main-column .about-main-link {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -384,7 +395,7 @@ body .main-about .main-container .about-main-container .main-column .about-main-
   display: block;
 }
 
-body .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer {
+body .wraper .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer {
   height: 100%;
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.85)));
@@ -392,15 +403,15 @@ body .main-about .main-container .about-main-container .main-column .about-main-
   position: relative;
 }
 
-body .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer:hover .about-main-orange-container {
+body .wraper .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer:hover .about-main-orange-container {
   height: 140px;
 }
 
-body .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer:hover .about-main-number {
+body .wraper .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer:hover .about-main-number {
   color: white;
 }
 
-body .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer .about-main-number {
+body .wraper .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer .about-main-number {
   font-size: 52px;
   line-height: 38px;
   font-weight: bold;
@@ -411,7 +422,7 @@ body .main-about .main-container .about-main-container .main-column .about-main-
   display: block;
 }
 
-body .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer .about-main-orange-container {
+body .wraper .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer .about-main-orange-container {
   background-color: #ef6c00;
   padding: 13px 20px;
   overflow: hidden;
@@ -424,14 +435,14 @@ body .main-about .main-container .about-main-container .main-column .about-main-
   bottom: 0px;
 }
 
-body .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer .about-main-orange-container .about-main-name {
+body .wraper .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer .about-main-orange-container .about-main-name {
   font-size: 16px;
   line-height: 18px;
   font-weight: bold;
   color: #fff;
 }
 
-body .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer .about-main-orange-container .about-main-text {
+body .wraper .main-about .main-container .about-main-container .main-column .about-main-link .about-main-shadowcontainer .about-main-orange-container .about-main-text {
   font-size: 12px;
   line-height: 16px;
   color: #fff;
@@ -439,56 +450,56 @@ body .main-about .main-container .about-main-container .main-column .about-main-
   margin-top: 13px;
 }
 
-body .main-about .main-container .about-main-container .main-column-02 {
+body .wraper .main-about .main-container .about-main-container .main-column-02 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
   max-width: 50%;
 }
 
-body .main-about .main-container .about-main-container .main-column-04 {
+body .wraper .main-about .main-container .about-main-container .main-column-04 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 33.333333%;
           flex: 0 0 33.333333%;
   max-width: 33.333333%;
 }
 
-body .main-about .main-container .about-main-container .main-column-06 {
+body .wraper .main-about .main-container .about-main-container .main-column-06 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 41.666667%;
           flex: 0 0 41.666667%;
   max-width: 41.666667%;
 }
 
-body .logo-carousel {
+body .wraper .logo-carousel {
   padding-top: 130px;
 }
 
-body .logo-carousel .main-container .wrap-owl-carousel {
+body .wraper .logo-carousel .main-container .wrap-owl-carousel {
   padding: 44px 0 80px;
 }
 
-body .logo-carousel .main-container .wrap-owl-carousel .owl-carousel .owl-images {
+body .wraper .logo-carousel .main-container .wrap-owl-carousel .owl-carousel .owl-images {
   width: 60px;
   height: 60px;
   margin: auto;
 }
 
-body .main-banner {
+body .wraper .main-banner {
   background-repeat: no-repeat;
   background-position: top left;
   background-size: auto 100%;
   padding: 220px 0 70px;
 }
 
-body .main-banner .main-container .row .main-column-02 {
+body .wraper .main-banner .main-container .row .main-column-02 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
   max-width: 50%;
 }
 
-body .main-banner .main-container .row .main-column-02 .main-banner-head {
+body .wraper .main-banner .main-container .row .main-column-02 .main-banner-head {
   font-size: 38px;
   line-height: 42px;
   color: #fff;
@@ -496,20 +507,33 @@ body .main-banner .main-container .row .main-column-02 .main-banner-head {
   margin-bottom: 10px;
 }
 
-body .main-banner .main-container .row .main-column-02 .main-banner-text {
+body .wraper .main-banner .main-container .row .main-column-02 .main-banner-text {
   color: #fff;
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 25px;
 }
 
-body .main-banner .main-container .row .main_banner_content {
+body .wraper .main-banner .main-container .row .main_banner_content {
   min-height: 258px;
 }
 
-body .main-banner .main-container .row .main-banner-tell .tell-number {
+body .wraper .main-banner .main-container .row .main-banner-tell .tell-number {
   color: #ef6c00;
   font-size: 20px;
   font-weight: 900;
+}
+
+body .main-map {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+body .main-map #map {
+  width: 100%;
+  height: 500px;
 }
 /*# sourceMappingURL=index.css.map */
