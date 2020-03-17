@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/owl.carousel.min.css">
     <link rel="stylesheet" href="CSS/owl.theme.default.min.css">
-    <script src="JS/jquery.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
@@ -811,37 +810,23 @@
     </div>
     <section class="main-map">
         <div id="map"></div>
-        <script>
-            var map;
-
-            function initMap() {
-                map = new google.maps.Map(document.getElementById('map'), {
-                    center: {
-                        lat: 53.845403,
-                        lng: 27.412732
-                    },
-                    zoom: 15
-                });
-                var marker = new google.maps.Marker({
-                    position: {
-                        lat: 53.845403,
-                        lng: 27.412732
-                    },
-                    map: map,
-                    title: 'Наш маркер: Большой театр'
-                });
-            }
-        </script>
+        <div class="main-container">
+            <div class="map-contacts">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias alias laborum quisquam ex officiis maiores? Aperiam sapiente omnis dicta est aliquam. Iste culpa alias tempore reiciendis similique provident pariatur quis?</div>
+        </div>
     </section>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
-    <script type="text/javascript" src="//web-ptica.ru/VRV-files/knopkavverh/9.js"></script>
+    <div id="scrollToTop" onclick="goUp();" style="background-image: url(Img/scroll.png);"></div>
     <script src="JS/header.js"></script>
+    <script src="JS/jquery.js"></script>
+    <script src="JS/owl.carousel.js"></script>
     <script src="JS/owl.carousel.min.js"></script>
     <script src="JS/owl-carousel.js "></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+    <script src="JS/map.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
+    <script src="JS/scrollToTop.js"></script>
 </body>
 
 </html>
