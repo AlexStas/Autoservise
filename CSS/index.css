@@ -132,6 +132,7 @@ body .wraper .header .header-top .info-container .info-service .call-number .cal
 body .wraper .header .wraper-header-bottom {
   background-color: #212529;
   z-index: 1000;
+  position: relative;
 }
 
 body .wraper .header .wraper-header-bottom .header-bottom {
@@ -171,7 +172,6 @@ body .wraper .header .wraper-header-bottom .header-bottom .header-nav {
 body .wraper .header .wraper-header-bottom .header-bottom .header-nav .nav-site {
   -webkit-transition: background-color .2s ease-in-out;
   transition: background-color .2s ease-in-out;
-  position: relative;
 }
 
 body .wraper .header .wraper-header-bottom .header-bottom .header-nav .nav-site:hover {
@@ -192,9 +192,9 @@ body .wraper .header .wraper-header-bottom .header-bottom .header-nav .wrap-nav-
   display: none;
   position: absolute;
   top: 100%;
-  left: -1350px;
   z-index: 900;
-  min-width: 2560px;
+  width: 100%;
+  left: 0;
   background-color: rgba(255, 255, 255, 0.85);
 }
 

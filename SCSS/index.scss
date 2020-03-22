@@ -81,6 +81,7 @@
                .wraper-header-bottom {
                    background-color: $header-icon-bgc;
                    z-index: 1000;
+                   position: relative;
                    .header-bottom {
                        display: flex;
                        justify-content: space-between;
@@ -102,7 +103,6 @@
                            width: 60%;
                            .nav-site {
                                transition: background-color .2s ease-in-out;
-                               position: relative;
                                &:hover {
                                    background-color: $base-color;
                                }
@@ -119,9 +119,9 @@
                                display: none;
                                position: absolute;
                                top: 100%;
-                               left: -1350px;
                                z-index: 900;
-                               min-width: 2560px;
+                               width: 100%;
+                               left: 0;
                                background-color: rgba(255, 255, 255, 0.85);
                                .nav-block {
                                    display: grid;
