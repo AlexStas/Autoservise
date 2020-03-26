@@ -8,6 +8,8 @@ var sticky = header.offsetTop;
 function myFunction() {
     if (window.pageYOffset >= sticky) {
         header.classList.add("sticky");
+        console.log('hhhh');
+
     } else {
         header.classList.remove("sticky");
     }

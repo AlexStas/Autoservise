@@ -283,10 +283,21 @@
             </section>
         </section>
         <section class="wrap-carousel">
-            <div class="owl-carousel" id="topCarousel">
-                <div class="owl-container"><img src="Img/1.png" alt="" style="background-size: auto 100%; background-repeat: no-repeat;"></div>
-                <div class="owl-container"><img src="Img/2.png" alt="" style="background-size: auto 100%; background-repeat: no-repeat;"></div>
-                <div class="owl-container"><img src="Img/3.png" alt="" style="background-size: auto 100%; background-repeat: no-repeat;"></div>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="Img/1.png" style="width:100%">
+                    <h1 class="text">Мойка автомобиля</h1>
+                </div>
+                <div class="mySlides fade">
+                    <img src="Img/2.png" style="width:100%">
+                    <h1 class="text">Компьютерная диагностика </h1>
+                </div>
+                <div class="mySlides fade">
+                    <img src="Img/3.png" style="width:100%">
+                    <h1 class="text">Профессиональный ремонт</h1>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
             </div>
         </section>
         <section class="wraper-icon-description">
@@ -829,6 +840,7 @@
     </section>
     <div id="scrollToTop" onclick="goUp();" style="background-image: url(Img/scroll.png);"></div>
     <script src="JS/header.js"></script>
+    <script src="JS/top-carousel.js"></script>
     <script src="JS/jquery.js"></script>
     <script src="JS/owl.carousel.min.js"></script>
     <script src="JS/owl-carousel.js "></script>

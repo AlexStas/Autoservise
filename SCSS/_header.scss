@@ -1,0 +1,138 @@
+@import '_variables';
+body {
+    .wraper {
+        .header {
+            background-color: white;
+            .header-top {
+                display: flex;
+                justify-content: space-between;
+                margin: 20px auto;
+                .info-container {
+                    display: flex;
+                    justify-content: space-between;
+                    .info-service {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-left: 20px;
+                        color: $header-info-color;
+                        .header-icon {
+                            margin-right: 10px;
+                        }
+                        .info-text {
+                            font-size: 12px;
+                        }
+                        .call-number {
+                            color: black;
+                            font-size: 20px;
+                            font-weight: 900;
+                            position: relative;
+                            .call {
+                                color: $base-color;
+                                position: absolute;
+                                right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            #myHeader {
+                background-color: $header-icon-bgc;
+                z-index: 1000;
+                .header-bottom {
+                    display: flex;
+                    position: relative;
+                    justify-content: space-between;
+                    align-items: center;
+                    list-style: none;
+                    color: white;
+                    .name-site {
+                        font-size: 30px;
+                        font-weight: 800;
+                        color: $base-color;
+                        letter-spacing: 4px;
+                    }
+                    .header-nav {
+                        font-size: 16px;
+                        font-weight: 900;
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 0;
+                        width: 60%;
+                        .nav-site {
+                            transition: background-color .2s ease-in-out;
+                            &:hover {
+                                background-color: $base-color;
+                            }
+                            &:hover .wrap-nav-block {
+                                display: block;
+                            }
+                        }
+                        .nav-site-link {
+                            padding: 15px 15px;
+                            color: white;
+                            display: block;
+                        }
+                        .wrap-nav-block {
+                            display: none;
+                            position: absolute;
+                            top: 100%;
+                            z-index: 900;
+                            width: 100%;
+                            left: 0;
+                            background-color: rgba(255, 255, 255, 0.85);
+                            .nav-block {
+                                display: grid;
+                                grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+                                margin-top: 10px;
+                                .nav-grids {
+                                    .nav-grids-link {
+                                        color: $header-icon-bgc;
+                                        margin-bottom: 10px;
+                                        position: relative;
+                                        &:hover {
+                                            color: $base-color;
+                                        }
+                                        &::after {
+                                            background: $base-color;
+                                            content: "";
+                                            display: block;
+                                            height: 2px;
+                                            position: absolute;
+                                            width: 100%;
+                                        }
+                                    }
+                                    .lists {
+                                        padding: 0;
+                                        margin-bottom: 15px;
+                                        .nav-grids-list {
+                                            margin: 0;
+                                            line-height: 20px;
+                                            .list-link {
+                                                color: $header-info-color;
+                                                font-size: 14px;
+                                                &:hover {
+                                                    color: $base-color;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #scrollToTop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer;
+        opacity: 0;
+        transition: all 0.5s ease-in;
+        z-index: 2;
+        width: 48px;
+        height: 48px;
+    }
+}
