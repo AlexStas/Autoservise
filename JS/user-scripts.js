@@ -1,7 +1,9 @@
 window.onscroll = function() {
+    myFunction()
     var scrollElem = document.getElementById("scrollToTop");
-    if (window.pageYOffset > document.documentElement.clientHeight) {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         scrollElem.style.opacity = "1";
+
     } else {
         scrollElem.style.opacity = "0";
     }
@@ -15,3 +17,14 @@ function goUp() {
         timeOut = setTimeout('goUp()', 20);
     } else clearTimeout(timeOut);
 }
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        header.classList.add("sticky");
+
+    } else {
+        header.classList.remove("sticky");
+    }
+};

@@ -39,8 +39,8 @@ body {
                 background-color: $header-icon-bgc;
                 z-index: 1000;
                 .header-bottom {
-                    display: flex;
                     position: relative;
+                    display: flex;
                     justify-content: space-between;
                     align-items: center;
                     list-style: none;

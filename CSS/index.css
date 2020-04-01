@@ -105,10 +105,10 @@ body .wraper .header #myHeader {
 }
 
 body .wraper .header #myHeader .header-bottom {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
