@@ -1,5 +1,6 @@
 window.onscroll = function() {
-    myFunction()
+    myFunction() //header hidden
+        //scrollbtn
     var scrollElem = document.getElementById("scrollToTop");
     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         scrollElem.style.opacity = "1";
@@ -17,6 +18,7 @@ function goUp() {
         timeOut = setTimeout('goUp()', 20);
     } else clearTimeout(timeOut);
 }
+//header hidden
 var header = document.getElementById("myHeader");
 var sticky = header.offsetTop;
 
@@ -28,3 +30,28 @@ function myFunction() {
         header.classList.remove("sticky");
     }
 };
+//top carousel
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 7000);
+}

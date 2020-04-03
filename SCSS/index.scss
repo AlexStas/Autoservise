@@ -81,7 +81,7 @@
                        .service-main-link {
                            display: block;
                            max-width: 263px;
-                           height: 375px;
+                           // height: 375px;
                            position: relative;
                            margin: 0 auto 30px;
                            .wrap-service-main-image {
@@ -307,7 +307,7 @@
                grid-row: nav-start / nav-end;
                z-index: 3;
                margin-left: 50px;
-               width: 400px;
+               max-width: 400px;
                background-color: rgba(255, 255, 255, 0.849);
                .contact {
                    padding-left: 30px;
@@ -331,6 +331,8 @@
            }
        }
        #scrollToTop {
+           background-repeat: no-repeat;
+           background-size: auto 100%;
            position: fixed;
            bottom: 20px;
            right: 20px;
