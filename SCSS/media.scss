@@ -86,10 +86,6 @@
         .main-container {
             max-width: 540px;
         }
-        #scrollToTop {
-            width: 70px;
-            height: 70px;
-        }
         .wraper {
             .header {
                 #myHeader {
@@ -119,16 +115,6 @@
                     }
                 }
             }
-            .main-service {
-                .service-main-container {
-                    grid-gap: 10px;
-                    .column-service {
-                        .service-main-link {
-                            max-width: 400px;
-                        }
-                    }
-                }
-            }
         }
     }
 }
@@ -137,6 +123,16 @@
     body {
         .main-container {
             width: 100%;
+        }
+        .main-service {
+            .service-main-container {
+                grid-gap: 10px;
+                .column-service {
+                    .service-main-link {
+                        max-width: 400px;
+                    }
+                }
+            }
         }
     }
 }

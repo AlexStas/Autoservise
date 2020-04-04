@@ -54,6 +54,7 @@
                    justify-content: space-between;
                    .description-block {
                        display: flex;
+                       align-items: center;
                        color: white;
                        font-size: 12px;
                        line-height: 15px;
@@ -292,40 +293,35 @@
            bottom: 0;
            left: 0;
            width: 100%;
-           display: grid;
-           grid-template-columns: 20% 20% 20% 20% 20%;
-           grid-template-rows: 125px 125px 125px 125px;
-           grid-template-areas: 'title title aside aside aside' 'nav main aside aside aside' 'nav main aside aside aside' 'footer footer footer footer footer';
            .map {
                width: 100%;
                height: 500px;
-               grid-column: nav-start / aside-end;
-               grid-row: title-start / footer-end;
            }
-           .map-container {
-               grid-column: nav-start / nav-end;
-               grid-row: nav-start / nav-end;
-               z-index: 3;
-               margin-left: 50px;
-               max-width: 400px;
-               background-color: rgba(255, 255, 255, 0.849);
-               .contact {
-                   padding-left: 30px;
-               }
-               .map-contacts {
-                   color: $header-icon-bgc;
-                   padding: 0 0 20px 50px;
-                   font-weight: 900;
-                   display: flex;
-                   flex-direction: column;
-                   justify-content: space-between;
-                   position: relative;
-                   height: calc(100% - 60px);
-               }
-               .contact-info {
-                   margin: 0;
-                   span {
-                       margin-right: 10px;
+           .main-container {
+               .map-container {
+                   padding: 24px 28px;
+                   max-width: 400px;
+                   background-color: white;
+                   position: absolute;
+                   bottom: 180px;
+                   .contact {
+                       margin: 0 0 20px;
+                   }
+                   .map-contacts {
+                       color: $header-icon-bgc;
+                       //padding: 0 0 20px 50px;
+                       font-weight: 900;
+                       display: flex;
+                       flex-direction: column;
+                       justify-content: space-between;
+                       position: relative;
+                       height: calc(100% - 60px);
+                   }
+                   .contact-info {
+                       margin: 0 0 10px;
+                       span {
+                           margin-right: 10px;
+                       }
                    }
                }
            }

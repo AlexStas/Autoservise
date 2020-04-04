@@ -60,10 +60,6 @@
   body .main-container {
     max-width: 540px;
   }
-  body #scrollToTop {
-    width: 70px;
-    height: 70px;
-  }
   body .wraper .header #myHeader .header-bottom .name-site {
     font-size: 25px;
   }
@@ -83,17 +79,17 @@
             flex: 0 0 100%;
     max-width: 100%;
   }
-  body .wraper .main-service .service-main-container {
-    grid-gap: 10px;
-  }
-  body .wraper .main-service .service-main-container .column-service .service-main-link {
-    max-width: 400px;
-  }
 }
 
 @media (max-width: 570px) {
   body .main-container {
     width: 100%;
+  }
+  body .main-service .service-main-container {
+    grid-gap: 10px;
+  }
+  body .main-service .service-main-container .column-service .service-main-link {
+    max-width: 400px;
   }
 }
 /*# sourceMappingURL=media.css.map */
