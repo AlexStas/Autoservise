@@ -102,6 +102,9 @@
                     .description-block {
                         flex: 0 0 50%;
                         max-width: 50%;
+                        .icon-block {
+                            margin-right: 20px;
+                        }
                     }
                 }
             }
@@ -124,12 +127,13 @@
         .main-container {
             width: 100%;
         }
-        .main-service {
-            .service-main-container {
-                grid-gap: 10px;
-                .column-service {
-                    .service-main-link {
-                        max-width: 400px;
+        .wraper {
+            .wraper-icon-description {
+                .icon-description {
+                    flex-wrap: wrap;
+                    .description-block {
+                        flex: 0 0 100%;
+                        max-width: 100%;
                     }
                 }
             }

@@ -5,7 +5,7 @@ $('#bottomCarousel').owlCarousel({
     nav: false,
     responsive: {
         0: {
-            items: 4
+            items: 3
         },
         600: {
             items: 5
