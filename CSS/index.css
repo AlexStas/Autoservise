@@ -214,6 +214,67 @@ body .wraper .header #myHeader .header-bottom .header-nav .wrap-nav-block .nav-b
   color: #ef6c00;
 }
 
+body .wraper .header #myHeader .header-bottom .burger-menu .burger-menu-button {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: solid 1px white;
+}
+
+body .wraper .header #myHeader .header-bottom .burger-menu .burger-menu-button :hover.burger-menu-lines {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+}
+
+body .wraper .header #myHeader .header-bottom .burger-menu .burger-menu-button .burger-menu-lines {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+}
+
+body .wraper .header #myHeader .header-bottom .burger-menu .burger-menu-button .burger-menu-lines::before, body .wraper .header #myHeader .header-bottom .burger-menu .burger-menu-button .burger-menu-lines::after {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #c41313;
+}
+
+body .wraper .header #myHeader .header-bottom .burger-menu .burger-menu-button .burger-menu-lines::after {
+  content: '';
+  top: 10px;
+}
+
+body .wraper .header #myHeader .header-bottom .burger-menu .burger-menu-button .burger-menu-lines::before {
+  content: '';
+  top: -10px;
+}
+
+body .wraper .header #myHeader .header-bottom .burger-menu .burger-menu-button .burger-menu-lines {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50% -50%);
+          transform: translate(-50% -50%);
+}
+
+body .wraper .header #myHeader .header-bottom .burger-menu-active .burger-menu-lines {
+  background-color: transparent;
+}
+
+body .wraper .header #myHeader .header-bottom .burger-menu-active .burger-menu-lines::before {
+  content: '';
+  top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+body .wraper .header #myHeader .header-bottom .burger-menu-active .burger-menu-lines::after {
+  content: '';
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 body #scrollToTop {
   position: fixed;
   bottom: 20px;
@@ -672,7 +733,7 @@ body .main-map .main-container .map-container {
   max-width: 400px;
   background-color: white;
   position: absolute;
-  bottom: 180px;
+  bottom: 150px;
 }
 
 body .main-map .main-container .map-container .contact {
@@ -681,7 +742,6 @@ body .main-map .main-container .map-container .contact {
 
 body .main-map .main-container .map-container .map-contacts {
   color: #212529;
-  font-weight: 900;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -689,11 +749,6 @@ body .main-map .main-container .map-container .map-contacts {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
-  height: calc(100% - 60px);
 }
 
 body .main-map .main-container .map-container .contact-info {

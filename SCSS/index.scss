@@ -82,7 +82,6 @@
                        .service-main-link {
                            display: block;
                            max-width: 263px;
-                           // height: 375px;
                            position: relative;
                            margin: 0 auto 30px;
                            .wrap-service-main-image {
@@ -303,19 +302,14 @@
                    max-width: 400px;
                    background-color: white;
                    position: absolute;
-                   bottom: 180px;
+                   bottom: 150px;
                    .contact {
                        margin: 0 0 20px;
                    }
                    .map-contacts {
                        color: $header-icon-bgc;
-                       //padding: 0 0 20px 50px;
-                       font-weight: 900;
                        display: flex;
                        flex-direction: column;
-                       justify-content: space-between;
-                       position: relative;
-                       height: calc(100% - 60px);
                    }
                    .contact-info {
                        margin: 0 0 10px;

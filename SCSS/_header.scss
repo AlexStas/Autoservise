@@ -120,6 +120,58 @@ body {
                             }
                         }
                     }
+                    .burger-menu {
+                        .burger-menu-button {
+                            position: relative;
+                            width: 50px;
+                            height: 50px;
+                            border: solid 1px white;
+                            & :hover.burger-menu-lines {
+                                filter: brightness(0.7);
+                            }
+                            .burger-menu-lines {
+                                position: absolute;
+                                width: 30px;
+                                height: 3px;
+                                background-color: #fff;
+                                &::before,
+                                &::after {
+                                    position: absolute;
+                                    width: 30px;
+                                    height: 3px;
+                                    background-color: rgb(196, 19, 19);
+                                }
+                                &::after {
+                                    content: '';
+                                    top: 10px;
+                                }
+                                &::before {
+                                    content: '';
+                                    top: -10px;
+                                }
+                            }
+                            .burger-menu-lines {
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50% -50%);
+                            }
+                        }
+                    }
+                    .burger-menu-active {
+                        .burger-menu-lines {
+                            background-color: transparent;
+                            &::before {
+                                content: '';
+                                top: 0;
+                                transform: rotate(45deg);
+                            }
+                            &::after {
+                                content: '';
+                                top: 0;
+                                transform: rotate(-45deg);
+                            }
+                        }
+                    }
                 }
             }
         }

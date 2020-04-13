@@ -57,6 +57,7 @@
                 }
                 #myHeader {
                     .header-bottom {
+                        height: 50px;
                         .header-nav {
                             display: none;
                         }
@@ -102,9 +103,6 @@
                     .description-block {
                         flex: 0 0 50%;
                         max-width: 50%;
-                        .icon-block {
-                            margin-right: 20px;
-                        }
                     }
                 }
             }
