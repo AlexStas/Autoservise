@@ -1,6 +1,5 @@
    @import '_variables';
    @import '_header';
-   @import '_top-carousel';
    body {
        .sticky {
            position: fixed;
@@ -8,7 +7,6 @@
            width: 100%;
        }
        .row {
-           //margin: 0 -15px;
            display: flex;
            flex-wrap: wrap;
        }
@@ -47,6 +45,42 @@
            background: repeating-linear-gradient(to bottom, #fff, #fff 2px, #f2f2f2 2px, #f2f2f2 4px);
            position: relative;
            z-index: 1;
+           &::after {
+               content: '';
+               display: block;
+               width: 100%;
+               height: 70px;
+               // background-color: red;
+               clip-path: polygon(100% 55%, 0% 100%, 100% 100%);
+               position: absolute;
+               bottom: 0;
+           }
+           .wrap-carousel {
+               .owl-carousel {
+                   .item {
+                       height: 300px;
+                       background-position: center center;
+                       background-repeat: no-repeat;
+                       background-size: cover;
+                       .main-container {
+                           .carousel-head {
+                               padding: 50px 0;
+                               max-width: 400px;
+                               .head-item {
+                                   margin: 0;
+                                   text-shadow: 0 0 10px #000;
+                                   color: white;
+                               }
+                           }
+                       }
+                   }
+                   .owl-dots {
+                       position: absolute;
+                       bottom: 0;
+                       left: 50%;
+                   }
+               }
+           }
            .wraper-icon-description {
                background-color: $header-icon-bgc;
                .icon-description {

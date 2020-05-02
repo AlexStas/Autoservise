@@ -15,3 +15,13 @@ $('#bottomCarousel').owlCarousel({
         }
     }
 })
+
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    nav: false,
+    items: 1,
+    //autoplay: true,
+    autoplayTimeout: 7000,
+    autoplayHoverPause: true
+
+})
