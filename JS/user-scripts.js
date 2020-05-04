@@ -32,31 +32,29 @@ function myFunction() {
 };
 
 //burger-menu
-
-function burgerMenu() {
-    let menu = document.querySelector(".burger-menu");
-    let button = menu.querySelector(".burger-menu-button");
-    let links = menu.querySelector(".burger-menu-link");
-    let overlay = menu.querySelector(".burger-menu-overlay");
-
-
-    button.addEventListener("click", (e) => {
-        e.preventDefault();
-        toggleMenu();
-    });
-    [].forEach.call(links, function(el) {
-        el.addEventListener("click", () => toggleMenu());
-    });
-    overlay.addEventListener("click", () => toggleMenu());
-
-
-    function toggleMenu() {
-        menu.classList.toggle("burger-menu-active");
-        if (menu.classList.contains("burger-menu-active")) {
-            document.body.style.overflow = "hidden";
-        } else {
-            document.body.style.overflow = "visible";
-        }
-    }
+let burger = document.querySelector('.burger');
+let burgerActive = document.querySelector('.burger span');
+let burgerMenu = document.querySelector('.burger-menu');
+const toggleMenu = function() {
+    burgerActive.classList.toggle('active');
 }
-burgerMenu();
+burger.addEventListener('click', function(e) {
+    e.stopPropagation();
+    toggleMenu();
+    if (burgerActive.classList.contains('active')) {
+        //burgerMenu.classList.toggle('burger-menu-show');
+        burgerMenu.animate([{ transform: 'translateX(-100%)' }])
+    } else {
+        // burgerMenu.classList.remove('burger-menu-show')
+    }
+});
+document.addEventListener('click', function(e) {
+    const target = e.target;
+    const its_menu = target == burgerMenu || burgerMenu.contains(target);
+    const its_btnMenu = target == burger;
+    const menu_is_active = burgerActive.classList.contains('active');
+    if (!its_menu && !its_btnMenu && menu_is_active) {
+        toggleMenu();
+        burgerMenu.classList.remove('burger-menu-show')
+    }
+})

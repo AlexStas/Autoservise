@@ -82,8 +82,9 @@ body {
                             background-color: rgba(255, 255, 255, 0.85);
                             .nav-block {
                                 display: grid;
+                                grid-gap: 5px;
                                 grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-                                margin-top: 10px;
+                                margin-top: 5px;
                                 .nav-grids {
                                     .nav-grids-link {
                                         color: $header-icon-bgc;
@@ -120,18 +121,69 @@ body {
                             }
                         }
                     }
-                    .burger-menu {
-                        .burger-menu-button {
-                            position: relative;
-                            width: 50px;
-                            height: 50px;
-                            border: solid 1px white;
-                            background-image: url(/Icons/burger.svg);
-                            background-repeat: no-repeat;
-                            background-size: auto 100%;
+                    .burger {
+                        display: none;
+                        position: absolute;
+                        width: 30px;
+                        height: 40px;
+                        bottom: 5px;
+                        right: 15px;
+                        cursor: pointer;
+                        span {
+                            width: 100%;
+                            position: absolute;
+                            height: 3px;
+                            background: white;
+                            top: 27px;
+                            &::before {
+                                content: "";
+                                top: -10px;
+                                width: 100%;
+                                position: absolute;
+                                height: 3px;
+                                background: white;
+                            }
+                            &::after {
+                                content: "";
+                                top: -20px;
+                                width: 100%;
+                                position: absolute;
+                                height: 3px;
+                                background: white;
+                            }
+                        }
+                        .active {
+                            background: transparent;
+                            &::before {
+                                content: "";
+                                top: -8px;
+                                transform: rotate(45deg);
+                            }
+                            &::after {
+                                content: "";
+                                top: -8px;
+                                transform: rotate(-45deg);
+                            }
                         }
                     }
-                    .burger-menu-active {}
+                    .burger-menu {
+                        position: fixed;
+                        right: -100%;
+                        height: 1000px;
+                        top: 50px;
+                        width: 300px;
+                        z-index: 100;
+                        transition: right 0.4s ease 0s;
+                        background-color: $header-icon-bgc;
+                        box-shadow: 3px 0px 10px 0px rgba(0, 0, 0, 0.45);
+                        .nav-list {
+                            color: red;
+                        }
+                    }
+                    .burger-menu-show {
+                        //right: 0;
+                        transform: translateX(-1000px);
+                    }
                 }
             }
         }
