@@ -67,7 +67,7 @@
     max-width: 540px;
   }
   body .wraper .header #myHeader .header-bottom .name-site {
-    font-size: 25px;
+    display: none;
   }
   body .wraper .wraper-icon-description .icon-description {
     -ms-flex-wrap: wrap;

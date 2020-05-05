@@ -5,6 +5,10 @@ $header-info-color: #9b9b9b;
     box-sizing: border-box;
 }
 
+.noscroll {
+    overflow: hidden;
+}
+
 body {
     font-family: 'Roboto', ;
     margin: 0;

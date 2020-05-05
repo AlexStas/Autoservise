@@ -35,17 +35,21 @@ function myFunction() {
 let burger = document.querySelector('.burger');
 let burgerActive = document.querySelector('.burger span');
 let burgerMenu = document.querySelector('.burger-menu');
+let backgroundBody = document.querySelector('.float-fade-background');
+let body = document.querySelector('body');
 const toggleMenu = function() {
     burgerActive.classList.toggle('active');
+    backgroundBody.classList.toggle('close-menu');
+    body.classList.toggle('noscroll');
 }
 burger.addEventListener('click', function(e) {
     e.stopPropagation();
     toggleMenu();
     if (burgerActive.classList.contains('active')) {
-        //burgerMenu.classList.toggle('burger-menu-show');
-        burgerMenu.animate([{ transform: 'translateX(-100%)' }])
+        burgerMenu.classList.toggle('burger-menu-show');
+
     } else {
-        // burgerMenu.classList.remove('burger-menu-show')
+        burgerMenu.classList.remove('burger-menu-show')
     }
 });
 document.addEventListener('click', function(e) {
