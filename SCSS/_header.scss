@@ -187,6 +187,7 @@ body {
                     .burger-menu {
                         position: fixed;
                         right: -100%;
+                        //right: 0;
                         top: 0;
                         bottom: 0;
                         width: 300px;
@@ -195,7 +196,6 @@ body {
                         background-color: $header-icon-bgc;
                         overflow: auto;
                         .burger-menu-nav {
-                            padding: 0;
                             .nav-list {
                                 &:nth-child(1) {
                                     border-top: solid 2px $base-color;
@@ -210,6 +210,36 @@ body {
                                     &:hover {
                                         background-color: $base-color;
                                     }
+                                }
+                                .nav-list-submenu {
+                                    position: absolute;
+                                    right: 100%;
+                                    top: 0;
+                                    bottom: 0;
+                                    width: 100%;
+                                    transition: all 0.4s ease 0s;
+                                    background-color: $header-icon-bgc;
+                                    .submenu {
+                                        .submenu-list {
+                                            &:nth-child(2) {
+                                                border-top: solid 2px $base-color;
+                                                border-bottom: solid 2px $base-color;
+                                            }
+                                            .submenu-list-link {
+                                                color: white;
+                                                font-weight: 900;
+                                                padding: 20px 50px;
+                                                display: block;
+                                                transition: background-color .2s ease-in-out;
+                                                &:hover {
+                                                    background-color: $base-color;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .submenu-visible {
+                                    right: 0;
                                 }
                             }
                         }

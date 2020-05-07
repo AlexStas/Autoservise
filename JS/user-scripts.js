@@ -1,6 +1,6 @@
+//scrollbtn
 window.onscroll = function() {
     myFunction()
-        //scrollbtn
     var scrollElem = document.getElementById("scrollToTop");
     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         scrollElem.style.opacity = "1";
@@ -41,24 +41,31 @@ const toggleMenu = function() {
     burgerActive.classList.toggle('active');
     backgroundBody.classList.toggle('close-menu');
     body.classList.toggle('noscroll');
+    burgerMenu.classList.toggle('burger-menu-show');
 }
 burger.addEventListener('click', function(e) {
     e.stopPropagation();
     toggleMenu();
-    if (burgerActive.classList.contains('active')) {
-        burgerMenu.classList.toggle('burger-menu-show');
-
-    } else {
-        burgerMenu.classList.remove('burger-menu-show')
-    }
 });
 document.addEventListener('click', function(e) {
-    const target = e.target;
-    const its_menu = target == burgerMenu || burgerMenu.contains(target);
-    const its_btnMenu = target == burger;
-    const menu_is_active = burgerActive.classList.contains('active');
-    if (!its_menu && !its_btnMenu && menu_is_active) {
-        toggleMenu();
-        burgerMenu.classList.remove('burger-menu-show')
-    }
+        const target = e.target;
+        const its_menu = target == burgerMenu || burgerMenu.contains(target);
+        const its_btnMenu = target == burger;
+        const menu_is_active = burgerActive.classList.contains('active');
+        if (!its_menu && !its_btnMenu && menu_is_active) {
+            toggleMenu();
+        }
+    })
+    //submenu
+let linkSubmenu = document.querySelector('.link-submenu');
+let submenu = document.querySelector('.nav-list-submenu');
+let closeSubmenu = document.querySelector('.back');
+const toggleSubmenu = function() {
+    submenu.classList.toggle('submenu-visible');
+}
+linkSubmenu.addEventListener('click', function() {
+    toggleSubmenu();
+})
+closeSubmenu.addEventListener('click', function() {
+    toggleSubmenu();
 })
