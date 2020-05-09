@@ -313,6 +313,13 @@ body .wraper .header #myHeader .header-bottom .burger-menu {
   transition: all 0.4s ease 0s;
   background-color: #212529;
   overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 body .wraper .header #myHeader .header-bottom .burger-menu .burger-menu-nav .nav-list:nth-child(1) {
@@ -320,11 +327,20 @@ body .wraper .header #myHeader .header-bottom .burger-menu .burger-menu-nav .nav
   border-bottom: solid 2px #ef6c00;
 }
 
+body .wraper .header #myHeader .header-bottom .burger-menu .burger-menu-nav .nav-list:nth-child(5) {
+  border-bottom: solid 2px #ef6c00;
+}
+
 body .wraper .header #myHeader .header-bottom .burger-menu .burger-menu-nav .nav-list .burger-list-link {
   color: white;
   font-weight: 900;
-  display: block;
-  padding: 20px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 30px;
   -webkit-transition: background-color .2s ease-in-out;
   transition: background-color .2s ease-in-out;
 }
@@ -352,7 +368,7 @@ body .wraper .header #myHeader .header-bottom .burger-menu .burger-menu-nav .nav
 body .wraper .header #myHeader .header-bottom .burger-menu .burger-menu-nav .nav-list .nav-list-submenu .submenu .submenu-list .submenu-list-link {
   color: white;
   font-weight: 900;
-  padding: 20px 50px;
+  padding: 20px 30px;
   display: block;
   -webkit-transition: background-color .2s ease-in-out;
   transition: background-color .2s ease-in-out;
@@ -364,6 +380,17 @@ body .wraper .header #myHeader .header-bottom .burger-menu .burger-menu-nav .nav
 
 body .wraper .header #myHeader .header-bottom .burger-menu .burger-menu-nav .nav-list .submenu-visible {
   right: 0;
+}
+
+body .wraper .header #myHeader .header-bottom .burger-menu .contact-info {
+  padding-left: 30px;
+  margin: 10px 0;
+}
+
+body .wraper .header #myHeader .header-bottom .burger-menu .contact-info a {
+  color: white;
+  margin-left: 5px;
+  font-size: 12px;
 }
 
 body .wraper .header #myHeader .header-bottom .burger-menu-show {

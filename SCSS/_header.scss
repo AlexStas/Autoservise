@@ -187,7 +187,6 @@ body {
                     .burger-menu {
                         position: fixed;
                         right: -100%;
-                        //right: 0;
                         top: 0;
                         bottom: 0;
                         width: 300px;
@@ -195,17 +194,23 @@ body {
                         transition: all 0.4s ease 0s;
                         background-color: $header-icon-bgc;
                         overflow: auto;
+                        display: flex;
+                        flex-direction: column;
                         .burger-menu-nav {
                             .nav-list {
                                 &:nth-child(1) {
                                     border-top: solid 2px $base-color;
                                     border-bottom: solid 2px $base-color;
                                 }
+                                &:nth-child(5) {
+                                    border-bottom: solid 2px $base-color;
+                                }
                                 .burger-list-link {
                                     color: white;
                                     font-weight: 900;
-                                    display: block;
-                                    padding: 20px 50px;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    padding: 20px 30px;
                                     transition: background-color .2s ease-in-out;
                                     &:hover {
                                         background-color: $base-color;
@@ -228,7 +233,7 @@ body {
                                             .submenu-list-link {
                                                 color: white;
                                                 font-weight: 900;
-                                                padding: 20px 50px;
+                                                padding: 20px 30px;
                                                 display: block;
                                                 transition: background-color .2s ease-in-out;
                                                 &:hover {
@@ -241,6 +246,15 @@ body {
                                 .submenu-visible {
                                     right: 0;
                                 }
+                            }
+                        }
+                        .contact-info {
+                            padding-left: 30px;
+                            margin: 10px 0;
+                            a {
+                                color: white;
+                                margin-left: 5px;
+                                font-size: 12px;
                             }
                         }
                     }
