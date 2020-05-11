@@ -55,7 +55,11 @@ document.addEventListener('click', function(e) {
         const menu_is_active = burgerActive.classList.contains('active')
         if (!its_menu && !its_btnMenu && menu_is_active) {
             toggleMenu()
-            scrollElem.style.opacity = "1"
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                scrollElem.style.opacity = "1"
+
+            }
+
         }
     })
     //submenu

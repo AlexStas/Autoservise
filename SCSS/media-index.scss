@@ -47,26 +47,6 @@
             max-width: 720px;
         }
         .wraper {
-            .header {
-                .header-top {
-                    .info-container {
-                        .media-1000 {
-                            display: none;
-                        }
-                    }
-                }
-                #myHeader {
-                    .header-bottom {
-                        height: 50px;
-                        .header-nav {
-                            display: none;
-                        }
-                        .burger {
-                            display: block;
-                        }
-                    }
-                }
-            }
             .main-about {
                 .main-container {
                     .about-main-container {
@@ -91,15 +71,6 @@
             max-width: 540px;
         }
         .wraper {
-            .header {
-                #myHeader {
-                    .header-bottom {
-                        .name-site {
-                            display: none;
-                        }
-                    }
-                }
-            }
             .wraper-icon-description {
                 .icon-description {
                     flex-wrap: wrap;

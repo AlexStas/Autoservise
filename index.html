@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>НьюСтасЕвроСервис</title>
     <link rel="stylesheet" href="CSS/index.css">
-    <link rel="stylesheet" href="CSS/media.css">
+    <link rel="stylesheet" href="CSS/media-header.css">
+    <link rel="stylesheet" href="CSS/media-index.css">
     <link rel="stylesheet" href="CSS/owl.carousel.min.css">
     <link rel="stylesheet" href="CSS/owl.theme.default.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -96,8 +97,8 @@
                 <div class="header-bottom main-container">
                     <div class="name-site"><span>НьюСтасЕвроСервис</span></div>
                     <ul class="header-nav">
-                        <li class="nav-site" style="background-color: #ef6c00;"><a href="" class="nav-site-link">главная</a></li>
-                        <li class="nav-site"><a href="" class="nav-site-link link-v">услуги <svg
+                        <li class="nav-site" style="background-color: #ef6c00;"><a href="index.html" class="nav-site-link">главная</a></li>
+                        <li class="nav-site"><a href="services.html" class="nav-site-link link-v">услуги <svg
                                     xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                                     <path fill="white" d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z" /></svg></a>
                             <div class="wrap-nav-block">
@@ -277,13 +278,14 @@
                         </li>
                         <li class="nav-site"><a href="" class="nav-site-link">цены</a></li>
                         <li class="nav-site"><a href="" class="nav-site-link">о нас</a></li>
-                        <li class="nav-site"><a href="#contacts" class="nav-site-link">контакты</a></li>
+                        <li class="nav-site"><a href="contacts.html" class="nav-site-link">контакты</a></li>
                     </ul>
                     <div class="burger"><span></span></div>
                     <div class="float-fade-background"></div>
                     <nav class="burger-menu">
                         <ul class="burger-menu-nav">
-                            <li class="nav-list"><a href="" class="burger-list-link">главная</a></li>
+                            <li class="nav-list"><a href="index.html" class="burger-list-link" style="border-top: solid 2px #ef6c00;
+                                border-bottom: solid 2px #ef6c00;">главная</a></li>
                             <li class="nav-list"><a class="burger-list-link link-submenu">услуги <span><svg version="1.1"  xmlns="http://www.w3.org/2000/svg" width="10" height="10" x="0px" y="0px"
                                 viewBox="0 0 492.004 492.004" style="enable-background:new 0 0 492.004 492.004;" xml:space="preserve">
                            <g>
@@ -297,7 +299,8 @@
                                 <div class="nav-list-submenu">
                                     <ul class="submenu">
                                         <li class="submenu-list"><a class="submenu-list-link back">назад</a></li>
-                                        <li class="submenu-list"><a href="" class="submenu-list-link">услуги</a></li>
+                                        <li class="submenu-list"><a href="services.html" class="submenu-list-link" style="border-top: solid 2px #ef6c00;
+                                            border-bottom: solid 2px #ef6c00;">услуги</a></li>
                                         <li class="submenu-list"><a href="" class="submenu-list-link">двигатель</a></li>
                                         <li class="submenu-list"><a href="" class="submenu-list-link">трансмиссия</a></li>
                                         <li class="submenu-list"><a href="" class="submenu-list-link">подвеска</a></li>
@@ -314,7 +317,7 @@
                             </li>
                             <li class="nav-list"><a href="" class="burger-list-link">о нас</a></li>
                             <li class="nav-list"><a href="" class="burger-list-link">цены</a></li>
-                            <li class="nav-list"><a href="" class="burger-list-link">контакты</a></li>
+                            <li class="nav-list"><a href="contacts.html" class="burger-list-link" style=" border-bottom: solid 2px #ef6c00;">контакты</a></li>
                         </ul>
                         <div class="map-contacts">
                             <p class="contact-info"> <span><svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 0 512 512" width="16px"><g><path d="m256 512c-68.378906 0-132.667969-26.628906-181.019531-74.980469-48.351563-48.351562-74.980469-112.640625-74.980469-181.019531s26.628906-132.667969 74.980469-181.019531c48.351562-48.351563 112.640625-74.980469 181.019531-74.980469s132.667969 26.628906 181.019531 74.980469c48.351563 48.351562 74.980469 112.640625 74.980469 181.019531s-26.628906 132.667969-74.980469 181.019531c-48.351562 48.351563-112.640625 74.980469-181.019531 74.980469zm0-472c-119.101562 0-216 96.898438-216 216s96.898438 216 216 216 216-96.898438 216-216-96.898438-216-216-216zm2 378c-7.433594 0-17.78125-2.636719-38.160156-22.195312-12.523438-12.015626-26.128906-27.949219-38.316406-44.863282-18.867188-26.183594-50.523438-77.367187-50.523438-125.941406 0-70.027344 56.972656-127 127-127s127 56.972656 127 127c0 49.675781-31.679688 100.734375-50.566406 126.75-12.164063 16.757812-25.796875 32.539062-38.382813 44.4375-20.328125 19.222656-30.640625 21.8125-38.050781 21.8125zm0-280c-47.972656 0-87 39.027344-87 87 0 25.660156 14.179688 60.9375 38.90625 96.785156 20.035156 29.046875 39.222656 47.605469 48.167969 54.304688 8.972656-6.601563 28.144531-24.886719 48.023437-53.519532 25.085938-36.132812 38.902344-70.785156 38.902344-97.570312 0-47.972656-39.027344-87-87-87zm-.863281 39c-.652344 0-1.308594.015625-1.96875.042969-2.769531.121093-5.53125.410156-8.4375 1.097656 5.566406 3.550781 9.269531 9.765625 9.269531 16.859375 0 11.046875-8.953125 20-20 20-9.589844 0-17.59375-6.75-19.539062-15.757812-1.550782 2.417968-2.816407 4.855468-3.796876 7.433593-5.636718 14.878907-5.0625 29.28125 3.765626 42.738281 8.925781 13.609376 24.382812 21.585938 40.308593 21.585938 3.460938 0 6.941407-.375 10.386719-1.152344 21.703125-4.898437 39.78125-26.960937 35.144531-53.296875-3.863281-21.925781-22.179687-39.550781-45.132812-39.550781zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#EF6C00"/></g> </svg>
@@ -345,21 +348,21 @@
         </section>
         <section class="wrap-carousel">
             <div class="owl-carousel owl-theme">
-                <div class="item" style="background-image: url(Img/1.png);">
+                <div class="item" style="background-image: url(Images/Top-carousel/1.png);">
                     <div class="main-container">
                         <div class="carousel-head">
                             <h1 class="head-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, dignissimos.</h1>
                         </div>
                     </div>
                 </div>
-                <div class="item" style="background-image: url(Img/2.png);">
+                <div class="item" style="background-image: url(Images/Top-carousel/2.png);">
                     <div class="main-container">
                         <div class="carousel-head">
                             <h1 class="head-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, dignissimos.</h1>
                         </div>
                     </div>
                 </div>
-                <div class="item" style="background-image: url(Img/3.png);">
+                <div class="item" style="background-image: url(Images/Top-carousel/3.png);">
                     <div class="main-container">
                         <div class="carousel-head">
                             <h1 class="head-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, dignissimos.</h1>
@@ -633,7 +636,7 @@
                         <a href="" class="service-main-link">
                             <div class="wrap-service-main-image">
                                 <div class="service-main-image">
-                                    <img class="main-image" src="Img/подвеска.png" alt="">
+                                    <img class="main-image" src="Images/Main-service/подвеска.png" alt="">
                                 </div>
                             </div>
                             <div class="main-service-shadow">
@@ -646,7 +649,7 @@
                         <a href="" class="service-main-link">
                             <div class="wrap-service-main-image">
                                 <div class="service-main-image">
-                                    <img class="main-image" src="Img/автоэлектрика.png" alt="">
+                                    <img class="main-image" src="Images/Main-service/автоэлектрика.png" alt="">
                                 </div>
                             </div>
                             <div class="main-service-shadow">
@@ -659,7 +662,7 @@
                         <a href="" class="service-main-link">
                             <div class="wrap-service-main-image">
                                 <div class="service-main-image">
-                                    <img class="main-image" src="Img/диагностика_комп.png" alt="">
+                                    <img class="main-image" src="Images/Main-service/диагностика_комп.png" alt="">
                                 </div>
                             </div>
                             <div class="main-service-shadow">
@@ -672,7 +675,7 @@
                         <a href="" class="service-main-link">
                             <div class="wrap-service-main-image">
                                 <div class="service-main-image">
-                                    <img class="main-image" src="Img/мойка.png" alt="">
+                                    <img class="main-image" src="Images/Main-service/мойка.png" alt="">
                                 </div>
                             </div>
                             <div class="main-service-shadow">
@@ -685,7 +688,7 @@
                         <a href="" class="service-main-link">
                             <div class="wrap-service-main-image">
                                 <div class="service-main-image">
-                                    <img class="main-image" src="Img/ремонт_двс.png" alt="">
+                                    <img class="main-image" src="Images/Main-service/ремонт_двс.png" alt="">
                                 </div>
                             </div>
                             <div class="main-service-shadow">
@@ -698,7 +701,7 @@
                         <a href="" class="service-main-link">
                             <div class="wrap-service-main-image">
                                 <div class="service-main-image">
-                                    <img class="main-image" src="Img/ремонт_мкпп.png" alt="">
+                                    <img class="main-image" src="Images/Main-service/ремонт_мкпп.png" alt="">
                                 </div>
                             </div>
                             <div class="main-service-shadow">
@@ -711,7 +714,7 @@
                         <a href="" class="service-main-link">
                             <div class="wrap-service-main-image">
                                 <div class="service-main-image">
-                                    <img class="main-image" src="Img/шиномонтаж.png" alt="">
+                                    <img class="main-image" src="Images/Main-service/шиномонтаж.png" alt="">
                                 </div>
                             </div>
                             <div class="main-service-shadow">
@@ -724,7 +727,7 @@
                         <a href="" class="service-main-link">
                             <div class="wrap-service-main-image">
                                 <div class="service-main-image">
-                                    <img class="main-image" src="Img/ремонт_мкпп.png" alt="">
+                                    <img class="main-image" src="Images/Main-service/ремонт_мкпп.png" alt="">
                                 </div>
                             </div>
                             <div class="main-service-shadow">
@@ -737,7 +740,7 @@
                         <a href="" class="service-main-link">
                             <div class="wrap-service-main-image">
                                 <div class="service-main-image">
-                                    <img class="main-image" src="Img/подвеска.png" alt="">
+                                    <img class="main-image" src="Images/Main-service/подвеска.png" alt="">
                                 </div>
                             </div>
                             <div class="main-service-shadow">
@@ -750,7 +753,7 @@
                         <a href="" class="service-main-link">
                             <div class="wrap-service-main-image">
                                 <div class="service-main-image">
-                                    <img class="main-image" src="Img/подвеска.png" alt="">
+                                    <img class="main-image" src="Images/Main-service/подвеска.png" alt="">
                                 </div>
                             </div>
                             <div class="main-service-shadow">
@@ -763,12 +766,12 @@
             </div>
         </section>
         <section class="main-about">
-            <div class="main-about-background" style="background-image: url(Img/about_background.png);"></div>
+            <div class="main-about-background" style="background-image: url(Images/Main-about/about_background.png);"></div>
             <div class="main-container">
                 <h2 class="main-header">Доверьте свой<br>автомобиль именно нам</h2>
                 <div class="about-main-container row">
                     <div class="main-column">
-                        <a class="about-main-link" style="background-image: url(Img/01.png);">
+                        <a class="about-main-link" style="background-image: url(Images/Main-about/01.png);">
                             <div class="about-main-shadowcontainer">
                                 <span class="about-main-number">01</span>
                                 <div class="about-main-orange-container">
@@ -782,7 +785,7 @@
                         </a>
                     </div>
                     <div class="main-column main-column-02">
-                        <a class="about-main-link" style="background-image: url(Img/02.png);">
+                        <a class="about-main-link" style="background-image: url(Images/Main-about/02.png);">
                             <div class="about-main-shadowcontainer">
                                 <span class="about-main-number">02</span>
                                 <div class="about-main-orange-container">
@@ -796,7 +799,7 @@
                         </a>
                     </div>
                     <div class="main-column">
-                        <a class="about-main-link" style="background-image: url(Img/03.png);">
+                        <a class="about-main-link" style="background-image: url(Images/Main-about/03.png);">
                             <div class="about-main-shadowcontainer">
                                 <span class="about-main-number">03</span>
                                 <div class="about-main-orange-container">
@@ -811,7 +814,7 @@
                         </a>
                     </div>
                     <div class="main-column main-column-02 main-column-04">
-                        <a class="about-main-link" style="background-image: url(Img/04.png);">
+                        <a class="about-main-link" style="background-image: url(Images/Main-about/04.png);">
                             <div class="about-main-shadowcontainer">
                                 <span class="about-main-number">04</span>
                                 <div class="about-main-orange-container">
@@ -825,7 +828,7 @@
                         </a>
                     </div>
                     <div class="main-column">
-                        <a class="about-main-link" style="background-image: url(Img/01.png);">
+                        <a class="about-main-link" style="background-image: url(Images/Main-about/01.png);">
                             <div class="about-main-shadowcontainer">
                                 <span class="about-main-number">05</span>
                                 <div class="about-main-orange-container">
@@ -839,7 +842,7 @@
                         </a>
                     </div>
                     <div class="main-column main-column-02 main-column-06">
-                        <a class="about-main-link" style="background-image: url(Img/01.png);">
+                        <a class="about-main-link" style="background-image: url(Images/Main-about/01.png);">
                             <div class="about-main-shadowcontainer">
                                 <span class="about-main-number">06</span>
                                 <div class="about-main-orange-container">
@@ -860,25 +863,25 @@
                 <h2 class="main-header">Обслуживаем все<br>популярные марки автомобилей</h2>
                 <div class="wrap-owl-carousel">
                     <div class="owl-carousel owl-theme" id="bottomCarousel">
-                        <img src="Img/audi.png" alt="" class="owl-images">
-                        <img src="Img/bmw.png" alt="" class="owl-images">
-                        <img src="Img/chrysler.png" alt="" class="owl-images">
-                        <img src="Img/jaguar.png" alt="" class="owl-images">
-                        <img src="Img/jeep.png" alt="" class="owl-images">
-                        <img src="Img/mazda.png" alt="" class="owl-images">
-                        <img src="Img/mercedec.png" alt="" class="owl-images">
-                        <img src="Img/mitsubishi.png" alt="" class="owl-images">
-                        <img src="Img/nissan.png" alt="" class="owl-images">
-                        <img src="Img/opel.png" alt="" class="owl-images">
-                        <img src="Img/peugeut.png" alt="" class="owl-images">
-                        <img src="Img/porshe.png" alt="" class="owl-images">
-                        <img src="Img/volvo.png" alt="" class="owl-images">
-                        <img src="Img/vw.png" alt="" class="owl-images">
+                        <img src="Images/Logo-carousel/audi.png" alt="" class="owl-images">
+                        <img src="Images/Logo-carousel/bmw.png" alt="" class="owl-images">
+                        <img src="Images/Logo-carousel/chrysler.png" alt="" class="owl-images">
+                        <img src="Images/Logo-carousel/jaguar.png" alt="" class="owl-images">
+                        <img src="Images/Logo-carousel/jeep.png" alt="" class="owl-images">
+                        <img src="Images/Logo-carousel/mazda.png" alt="" class="owl-images">
+                        <img src="Images/Logo-carousel/mercedec.png" alt="" class="owl-images">
+                        <img src="Images/Logo-carousel/mitsubishi.png" alt="" class="owl-images">
+                        <img src="Images/Logo-carousel/nissan.png" alt="" class="owl-images">
+                        <img src="Images/Logo-carousel/opel.png" alt="" class="owl-images">
+                        <img src="Images/Logo-carousel/peugeut.png" alt="" class="owl-images">
+                        <img src="Images/Logo-carousel/porshe.png" alt="" class="owl-images">
+                        <img src="Images/Logo-carousel/volvo.png" alt="" class="owl-images">
+                        <img src="Images/Logo-carousel/vw.png" alt="" class="owl-images">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="main-banner" style="background-image: url(Img/main_banner_bg.png);">
+        <section class="main-banner" style="background-image: url(Images/main_banner_bg.png);">
             <div class="main-container">
                 <div class="row">
                     <div class="main-column-02 main_banner_content">
@@ -893,7 +896,7 @@
             </div>
         </section>
     </div>
-    <section class="main-map" id="contacts">
+    <section class="main-map">
         <div id="map" class="map"></div>
         <div class="main-container">
             <div class="map-container">
@@ -924,7 +927,7 @@
             </div>
         </div>
     </section>
-    <div id="scrollToTop" onclick="goUp();" style="background-image: url(Img/scroll.png);"></div>
+    <div id="scrollToTop" onclick="goUp();" style="background-image: url(Images/scroll.png);"></div>
     <script src="JS/user-scripts.js"></script>
     <script src="JS/jquery.js"></script>
     <script src="JS/owl.carousel.min.js"></script>

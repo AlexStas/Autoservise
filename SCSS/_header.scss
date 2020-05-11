@@ -1,5 +1,10 @@
 @import '_variables';
 body {
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
     .wraper {
         .header {
             background-color: white;
@@ -26,6 +31,9 @@ body {
                             font-size: 20px;
                             font-weight: 900;
                             position: relative;
+                            &:hover {
+                                text-decoration: underline;
+                            }
                             .call {
                                 color: $base-color;
                                 position: absolute;
@@ -198,13 +206,6 @@ body {
                         flex-direction: column;
                         .burger-menu-nav {
                             .nav-list {
-                                &:nth-child(1) {
-                                    border-top: solid 2px $base-color;
-                                    border-bottom: solid 2px $base-color;
-                                }
-                                &:nth-child(5) {
-                                    border-bottom: solid 2px $base-color;
-                                }
                                 .burger-list-link {
                                     color: white;
                                     font-weight: 900;
@@ -220,16 +221,11 @@ body {
                                     position: absolute;
                                     right: 100%;
                                     top: 0;
-                                    bottom: 0;
                                     width: 100%;
                                     transition: all 0.4s ease 0s;
                                     background-color: $header-icon-bgc;
                                     .submenu {
                                         .submenu-list {
-                                            &:nth-child(2) {
-                                                border-top: solid 2px $base-color;
-                                                border-bottom: solid 2px $base-color;
-                                            }
                                             .submenu-list-link {
                                                 color: white;
                                                 font-weight: 900;

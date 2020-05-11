@@ -1,0 +1,44 @@
+@media (max-width: 1170px) {
+    body {
+        .main-container {
+            max-width: 960px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    body {
+        .main-container {
+            max-width: 720px;
+        }
+        .wraper {
+            .main-container {
+                .main-block {
+                    .block-lists {
+                        display: none;
+                    }
+                    .block-items {
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 770px) {
+    body {
+        .main-container {
+            max-width: 540px;
+        }
+    }
+}
+
+@media (max-width: 570px) {
+    body {
+        .main-container {
+            width: 100%;
+        }
+    }
+}
