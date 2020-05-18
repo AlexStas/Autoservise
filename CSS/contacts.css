@@ -436,7 +436,7 @@ body .wraper .header #myHeader .header-bottom .burger-menu-show {
   right: 0;
 }
 
-body .wraper .top-title-block {
+body .top-title-block {
   min-height: 160px;
   background-color: grey;
   padding-bottom: 50px;
@@ -446,14 +446,14 @@ body .wraper .top-title-block {
   background-size: cover;
 }
 
-body .wraper .top-title-block .title-header {
+body .title-header {
   color: #fff;
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
 }
 
-body .wraper .main-container .main-block {
+body .main-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,7 +463,7 @@ body .wraper .main-container .main-block {
   margin-left: -15px;
 }
 
-body .wraper .main-container .main-block .block-lists {
+body .block-lists {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 25%;
           flex: 0 0 25%;
@@ -475,7 +475,7 @@ body .wraper .main-container .main-block .block-lists {
   padding-left: 15px;
 }
 
-body .wraper .main-container .main-block .block-lists .left-bar-menu {
+body .left-bar-menu {
   padding-top: 54px;
   padding-bottom: 54px;
   margin-left: -22px;
@@ -486,15 +486,15 @@ body .wraper .main-container .main-block .block-lists .left-bar-menu {
   text-align: left;
 }
 
-body .wraper .main-container .main-block .block-lists .left-bar-menu .bar-menu-list {
+body .bar-menu-list {
   border-top: 1px solid #e7e7e7;
 }
 
-body .wraper .main-container .main-block .block-lists .left-bar-menu .bar-menu-list:nth-child(1) {
+body .bar-menu-list:nth-child(1) {
   border-top: 0;
 }
 
-body .wraper .main-container .main-block .block-lists .left-bar-menu .bar-menu-list .bar-menu-link {
+body .bar-menu-link {
   display: block;
   font-size: 14px;
   line-height: 24px;
@@ -507,13 +507,13 @@ body .wraper .main-container .main-block .block-lists .left-bar-menu .bar-menu-l
   transition: margin-left .2s ease-in-out, margin-right .2s ease-in-out;
 }
 
-body .wraper .main-container .main-block .block-lists .left-bar-menu .bar-menu-list .bar-menu-link:hover {
+body .bar-menu-link:hover {
   margin-left: -20px;
   background-color: #ef6c00;
   color: white;
 }
 
-body .wraper .main-container .main-block .block-items {
+body .block-items {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 75%;
           flex: 0 0 75%;
@@ -525,7 +525,7 @@ body .wraper .main-container .main-block .block-items {
   padding-left: 15px;
 }
 
-body .wraper .main-container .main-block .block-items .right-block {
+body .right-block {
   -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
   margin-top: -36px;
@@ -535,8 +535,55 @@ body .wraper .main-container .main-block .block-items .right-block {
   background-color: #fff;
 }
 
-body .wraper .main-container .main-block .block-items .right-block .map {
+body .wraper .main-container .block-items .right-block .map {
   width: 100%;
   height: 500px;
+}
+
+body .wraper .main-container .block-items .right-block .main-container {
+  padding: 35px 30px 0px 30px;
+}
+
+body .wraper .main-container .block-items .right-block .main-container .wrap-contact-ofice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+body .wraper .main-container .block-items .right-block .main-container .wrap-contact-ofice .contact-ofice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 30px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333333%;
+          flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+body .wraper .main-container .block-items .right-block .main-container .wrap-contact-ofice .contact-ofice .contact-ofice-circle {
+  margin-right: 20px;
+}
+
+body .wraper .main-container .block-items .right-block .main-container .wrap-contact-ofice .contact-ofice .contact-ofice-info .ofice-info-text {
+  color: #9b9b9b;
+}
+
+body .wraper .main-container .block-items .right-block .main-container .wrap-contact-ofice .contact-ofice .contact-ofice-info a.ofice-info-text:hover {
+  color: black;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=contacts.css.map */
