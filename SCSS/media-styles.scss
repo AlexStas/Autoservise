@@ -47,6 +47,26 @@
             max-width: 720px;
         }
         .wraper {
+            .header {
+                .header-top {
+                    .info-container {
+                        .media-1000 {
+                            display: none;
+                        }
+                    }
+                }
+                #myHeader {
+                    .header-bottom {
+                        height: 50px;
+                        .header-nav {
+                            display: none;
+                        }
+                        .burger {
+                            display: block;
+                        }
+                    }
+                }
+            }
             .main-about {
                 .main-container {
                     .about-main-container {
@@ -61,6 +81,24 @@
                     }
                 }
             }
+            .main-container {
+                .main-block {
+                    .block-lists {
+                        display: none;
+                    }
+                    .block-items {
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
+                }
+                .wrap-contact-ofice {
+                    flex-direction: column;
+                    .contact-ofice {
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
         }
     }
 }
@@ -71,6 +109,15 @@
             max-width: 540px;
         }
         .wraper {
+            .header {
+                #myHeader {
+                    .header-bottom {
+                        .name-site {
+                            display: none;
+                        }
+                    }
+                }
+            }
             .wraper-icon-description {
                 .icon-description {
                     flex-wrap: wrap;
